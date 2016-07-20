@@ -1,14 +1,15 @@
 {
     "name": "laravel-blade",
-    "displayName": "Laravel 5",
-    "description": "Laravel 5 blade syntax highlight",
-    "version": "0.0.1",
+    "displayName": "Laravel Blade Snippets",
+    "description": "Laravel blade snippets and syntax highlight support",
+    "version": "1.0.0",
     "publisher": "onecentlin",
     "engines": {
         "vscode": "^1.0.0"
     },
     "categories": [
-        "Languages"
+        "Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -21,6 +22,12 @@
             "language": "blade",
             "scopeName": "text.html.php.laravel-blade",
             "path": "./syntaxes/blade.tmLanguage"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "blade",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     }
 }

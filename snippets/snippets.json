@@ -1,0 +1,186 @@
+{
+    /* Extending a layout */
+
+	"Extend layout": {
+		"prefix": "b:extends",
+		"body": [
+			"@extends('${1:name}')",
+            "$2"
+		],
+		"description": "Extends view layout"
+	},
+	"Yield content": {
+		"prefix": "b:yield",
+		"body": [
+			"@yield('${1:name}')",
+            "$2"
+		],
+		"description": "Yield content section"
+	},
+	"Content Section": {
+		"prefix": "b:section",
+		"body": [
+			"@section('${1:name}')",
+			"	$2",
+			"@endsection",
+            "$3"
+		],
+		"description": "Content section"
+	},
+    "Content Section Show": {
+		"prefix": "b:section-show",
+		"body": [
+			"@section('$1')",
+			"	$2",
+			"@show",
+            "$3"
+		],
+		"description": "Content section show"
+	},
+
+    /* Include sub-view */
+
+	"Include view": {
+		"prefix": "b:include",
+		"body": [
+			"@include('${1:name}')",
+            "$2"
+		],
+		"description": "Include view"
+	},
+
+    /* If Statements */
+
+	"If-block": {
+		"prefix": "b:if",
+		"body": [
+			"@if($1)",
+			"	$2",
+			"@endif",
+            "$3"
+		],
+		"description": "if block"
+	},
+	"If-else-block": {
+		"prefix": "b:if-else",
+		"body": [
+			"@if($1)",
+			"	$2",
+			"@else",
+			"	$3",
+			"@endif",
+            "$4"
+		],
+		"description": "if-else block"
+	},
+    "Has Section": {
+		"prefix": "b:has-section",
+		"body": [
+			"@hasSection('${1:name}')",
+            "   $2",
+            "@else",
+            "   $3",
+            "@endif",
+            "$4"
+		],
+		"description": "hasSection condition"
+	},
+
+    /* Loops */
+
+	"For-block": {
+		"prefix": "b:for",
+		"body": [
+			"@for($i = ${1:0}; $i < ${2:\\$collection}; $i++)",
+			"	$3",
+			"@endfor",
+            "$4"
+		],
+		"description": "for block"
+	},
+	"Foreach-block": {
+		"prefix": "b:foreach",
+		"body": [
+			"@foreach(${1:\\$collection} as ${2:\\$item})",
+			"	$2",
+			"@endforeach",
+            "$3"
+		],
+		"description": "foreach block"
+	},
+	"forelse-block": {
+		"prefix": "b:forelse",
+		"body": [
+			"@forelse (${1:\\$collection} as ${2:\\$item})",
+			"	$3",
+			"@empty",
+			"	$4",
+			"@endforelse",
+            "$5"
+		],
+		"description": "forelse block"
+	},
+	"while-block": {
+		"prefix": "b:while",
+		"body": [
+			"@while ($1)",
+			"	$2",
+			"@endwhile",
+            "$3"
+		],
+		"description": "while block"
+	},
+
+    /* Rendering views for collections */
+
+	"each loop": {
+		"prefix": "b:each",
+		"body": [
+            "@each('${1:view.name}', ${2:\\$collection}, '${3:variable}', '${4:view.empty}')",
+            "$5"
+		],
+		"description": "each loop"
+	},
+
+    /* Comments */
+
+	"blade comment": {
+		"prefix": "b:comment",
+		"body": [
+			"\\{\\{-- ${1:comment} --\\}\\}",
+            "$2"
+		],
+		"description": "Blade comment"
+	},
+
+    /* Stacks */
+    "Push stack": {
+		"prefix": "b:push",
+		"body": [
+			"@push('${1:name}')",
+            "   $2",
+            "@endpush",
+            "$3"
+		],
+		"description": "Push stack"
+	},
+    "Stack": {
+		"prefix": "b:stack",
+		"body": [
+			"@stack('${1:name}')",
+            "$2"
+		],
+		"description": "Stack"
+	},
+
+    /* Service Injection */
+
+	"inject service": {
+		"prefix": "b:inject",
+		"body": [
+			"@inject('${1:name}', '${2:class}')",
+            "$3"
+		],
+		"description": "Inject Service"
+	}
+}
