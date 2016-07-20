@@ -14,7 +14,7 @@
     "contributes": {
         "languages": [{
             "id": "blade",
-            "aliases": ["Blade", "blade"],
+            "aliases": ["Laravel Blade", "blade"],
             "extensions": [".blade.php"],
             "configuration": "./blade.configuration.json"
         }],
@@ -28,6 +28,14 @@
                 "language": "blade",
                 "path": "./snippets/snippets.json"
             }
-        ]
+        ],
+        "bugs": {
+            "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
+        },
+        "homepage": "https://github.com/onecentlin/laravel-blade-snippets-vscode/blob/master/README.md",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode.git"
+        }
     }
 }
