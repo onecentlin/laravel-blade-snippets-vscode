@@ -4,8 +4,25 @@
     "description": "Laravel blade snippets and syntax highlight support",
     "version": "1.0.0",
     "publisher": "onecentlin",
+    "author": {
+        "email": "onecentlin@gmail.com",
+        "name": "Winnie Lin"
+    },
+    "homepage": "https://github.com/onecentlin/laravel-blade-snippets-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode"
+    },
+    "bugs": {
+        "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
+    },
     "engines": {
         "vscode": "^1.0.0"
+    },
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "light"
     },
     "categories": [
         "Languages",
@@ -28,14 +45,6 @@
                 "language": "blade",
                 "path": "./snippets/snippets.json"
             }
-        ],
-        "bugs": {
-            "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
-        },
-        "homepage": "https://github.com/onecentlin/laravel-blade-snippets-vscode/blob/master/README.md",
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode.git"
-        }
+        ]
     }
 }
