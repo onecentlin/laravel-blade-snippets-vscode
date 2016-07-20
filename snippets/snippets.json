@@ -91,7 +91,7 @@
 	"For-block": {
 		"prefix": "b:for",
 		"body": [
-			"@for($i = ${1:0}; $i < ${2:\\$collection}; $i++)",
+			"@for($i = ${1:0}; $i < ${2:\\$count}; $i++)",
 			"	$3",
 			"@endfor",
             "$4"
