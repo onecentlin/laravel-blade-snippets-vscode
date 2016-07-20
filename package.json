@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "publisher": "onecentlin",
     "author": {
         "email": "onecentlin@gmail.com",
@@ -40,11 +40,9 @@
             "scopeName": "text.html.php.laravel-blade",
             "path": "./syntaxes/blade.tmLanguage"
         }],
-        "snippets": [
-            {
-                "language": "blade",
-                "path": "./snippets/snippets.json"
-            }
-        ]
+        "snippets": [{
+            "language": "blade",
+            "path": "./snippets/snippets.json"
+        }]
     }
 }
