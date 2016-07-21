@@ -2,11 +2,11 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "publisher": "onecentlin",
     "author": {
-        "email": "onecentlin@gmail.com",
-        "name": "Winnie Lin"
+        "name": "Winnie Lin",
+        "email": "onecentlin@gmail.com"
     },
     "homepage": "https://github.com/onecentlin/laravel-blade-snippets-vscode",
     "repository": {
@@ -19,6 +19,12 @@
     "engines": {
         "vscode": "^1.0.0"
     },
+    "keywords": [
+        "laravel",
+        "blade",
+        "template",
+        "snippets"
+    ],
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#f66f62",
@@ -30,18 +36,18 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "blade",
+            "id": "php",
             "aliases": ["Laravel Blade", "Blade", "blade"],
             "extensions": [".blade.php"],
             "configuration": "./blade.configuration.json"
         }],
         "grammars": [{
-            "language": "blade",
+            "language": "php",
             "scopeName": "text.html.php.laravel-blade",
             "path": "./syntaxes/blade.tmLanguage"
         }],
         "snippets": [{
-            "language": "blade",
+            "language": "php",
             "path": "./snippets/snippets.json"
         }]
     }
