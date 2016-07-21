@@ -2,11 +2,12 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
-        "email": "onecentlin@gmail.com"
+        "email": "onecentlin@gmail.com",
+        "url": "https://devmanna.blogspot.com"
     },
     "homepage": "https://github.com/onecentlin/laravel-blade-snippets-vscode",
     "repository": {

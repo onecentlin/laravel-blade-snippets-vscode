@@ -2,9 +2,11 @@
 
 Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
-## Features
+## Screenshot
 
-![Blade snippets](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshots.png)
+<img src="https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshots.png" width="650" alt="Blade snippets">
+
+## Features
 
 * Blade syntax highlight
 * Laravel blade snippets
@@ -23,7 +25,7 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
 ## Laravel Blade Snippets
 
-| Snippet        | Blade                           |
+| Trigger        | Snippet                         |
 |----------------|---------------------------------|
 | b:extends      | @extends                        |
 | b:yield        | @yield                          |
@@ -44,8 +46,9 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
 ## Found a Bug?
 
-Please file any issues at [https://github.com/onecentlin/laravel-blade-snippets-vscode/issues](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues).
+Please file any issues at [GitHub](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues).
 
 ## Credits
 
-Blade language grammar is based on [Medalink syntax definition](https://github.com/Medalink/laravel-blade) for Sublime Text, and Textmate language format file is based on [Textmate bundle for Laravel 5](https://github.com/loranger/Laravel.tmbundle).
+* Blade language grammar is based on [Medalink syntax definition](https://github.com/Medalink/laravel-blade) for Sublime Text.
+* Textmate language format file is based on [Textmate bundle for Laravel 5](https://github.com/loranger/Laravel.tmbundle).
