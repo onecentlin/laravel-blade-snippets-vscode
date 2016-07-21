@@ -4,16 +4,14 @@
 	"Extend layout": {
 		"prefix": "b:extends",
 		"body": [
-			"@extends('${1:name}')",
-            "$2"
+			"@extends('${1:name}')$2"
 		],
 		"description": "Extends view layout"
 	},
 	"Yield content": {
 		"prefix": "b:yield",
 		"body": [
-			"@yield('${1:name}')",
-            "$2"
+			"@yield('${1:name}')$2"
 		],
 		"description": "Yield content section"
 	},
@@ -43,8 +41,7 @@
 	"Include view": {
 		"prefix": "b:include",
 		"body": [
-			"@include('${1:name}')",
-            "$2"
+			"@include('${1:name}')$2"
 		],
 		"description": "Include view"
 	},
@@ -102,9 +99,9 @@
 		"prefix": "b:foreach",
 		"body": [
 			"@foreach(${1:\\$collection} as ${2:\\$item})",
-			"	$2",
+			"	$3",
 			"@endforeach",
-            "$3"
+            "$4"
 		],
 		"description": "foreach block"
 	},
@@ -136,8 +133,7 @@
 	"each loop": {
 		"prefix": "b:each",
 		"body": [
-            "@each('${1:view.name}', ${2:\\$collection}, '${3:variable}', '${4:view.empty}')",
-            "$5"
+            "@each('${1:view.name}', ${2:\\$collection}, '${3:variable}', '${4:view.empty}')$5"
 		],
 		"description": "each loop"
 	},
@@ -167,8 +163,7 @@
     "Stack": {
 		"prefix": "b:stack",
 		"body": [
-			"@stack('${1:name}')",
-            "$2"
+			"@stack('${1:name}')$2"
 		],
 		"description": "Stack"
 	},

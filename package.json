@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "onecentlin",
     "author": {
         "email": "onecentlin@gmail.com",
@@ -22,7 +22,7 @@
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#f66f62",
-        "theme": "light"
+        "theme": "dark"
     },
     "categories": [
         "Languages",
@@ -31,7 +31,7 @@
     "contributes": {
         "languages": [{
             "id": "blade",
-            "aliases": ["Laravel Blade", "blade"],
+            "aliases": ["Laravel Blade", "Blade", "blade"],
             "extensions": [".blade.php"],
             "configuration": "./blade.configuration.json"
         }],
