@@ -19,9 +19,8 @@
 		"prefix": "b:section",
 		"body": [
 			"@section('${1:name}')",
-			"	$2",
-			"@endsection",
-            "$3"
+			"    $2",
+			"@endsection"
 		],
 		"description": "Content section"
 	},
@@ -29,9 +28,8 @@
 		"prefix": "b:section-show",
 		"body": [
 			"@section('$1')",
-			"	$2",
-			"@show",
-            "$3"
+			"    $2",
+			"@show"
 		],
 		"description": "Content section show"
 	},
@@ -52,9 +50,8 @@
 		"prefix": "b:if",
 		"body": [
 			"@if($1)",
-			"	$2",
-			"@endif",
-            "$3"
+			"    $2",
+			"@endif"
 		],
 		"description": "if block"
 	},
@@ -62,11 +59,10 @@
 		"prefix": "b:if-else",
 		"body": [
 			"@if($1)",
-			"	$2",
+			"    $2",
 			"@else",
-			"	$3",
-			"@endif",
-            "$4"
+			"    $3",
+			"@endif"
 		],
 		"description": "if-else block"
 	},
@@ -74,11 +70,10 @@
 		"prefix": "b:has-section",
 		"body": [
 			"@hasSection('${1:name}')",
-            "   $2",
+            "    $2",
             "@else",
-            "   $3",
-            "@endif",
-            "$4"
+            "    $3",
+            "@endif"
 		],
 		"description": "hasSection condition"
 	},
@@ -89,9 +84,8 @@
 		"prefix": "b:for",
 		"body": [
 			"@for($i = ${1:0}; $i < ${2:\\$count}; $i++)",
-			"	$3",
-			"@endfor",
-            "$4"
+			"    $3",
+			"@endfor"
 		],
 		"description": "for block"
 	},
@@ -99,9 +93,8 @@
 		"prefix": "b:foreach",
 		"body": [
 			"@foreach(${1:\\$collection} as ${2:\\$item})",
-			"	$3",
-			"@endforeach",
-            "$4"
+			"    $3",
+			"@endforeach"
 		],
 		"description": "foreach block"
 	},
@@ -109,11 +102,10 @@
 		"prefix": "b:forelse",
 		"body": [
 			"@forelse (${1:\\$collection} as ${2:\\$item})",
-			"	$3",
+			"    $3",
 			"@empty",
-			"	$4",
-			"@endforelse",
-            "$5"
+			"    $4",
+			"@endforelse"
 		],
 		"description": "forelse block"
 	},
@@ -121,9 +113,8 @@
 		"prefix": "b:while",
 		"body": [
 			"@while ($1)",
-			"	$2",
-			"@endwhile",
-            "$3"
+			"    $2",
+			"@endwhile"
 		],
 		"description": "while block"
 	},
@@ -154,9 +145,8 @@
 		"prefix": "b:push",
 		"body": [
 			"@push('${1:name}')",
-            "   $2",
-            "@endpush",
-            "$3"
+            "    $2",
+            "@endpush"
 		],
 		"description": "Push stack"
 	},

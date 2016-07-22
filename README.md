@@ -4,7 +4,7 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
 ## Screenshot
 
-<img src="https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshots.png" width="650" alt="Blade snippets">
+![Demo](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshot.gif)
 
 ## Features
 

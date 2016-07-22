@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -37,18 +37,18 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "php",
+            "id": "html",
             "aliases": ["Laravel Blade", "Blade", "blade"],
             "extensions": [".blade.php"],
             "configuration": "./blade.configuration.json"
         }],
         "grammars": [{
-            "language": "php",
+            "language": "html",
             "scopeName": "text.html.php.laravel-blade",
             "path": "./syntaxes/blade.tmLanguage"
         }],
         "snippets": [{
-            "language": "php",
+            "language": "html",
             "path": "./snippets/snippets.json"
         }]
     }
