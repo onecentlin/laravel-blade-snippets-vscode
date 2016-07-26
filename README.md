@@ -44,11 +44,29 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 | b:stack        | @stack                          |
 | b:inject       | @inject                         |
 
-## Found a Bug?
+## Laravel Helper Snippets for Blade
 
-Please file any issues at [GitHub](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues).
+| Trigger         | Snippet                         |
+|-----------------|---------------------------------|
+| lv:elixir       | elixir()                        |
+| lv:trans        | trans()                         |
+| lv:action       | action()                        |
+| lv:secure_asset | secure_asset()                  |
+| lv:url          | url()                           |
+| lv:asset        | asset()                         |
+| lv:route        | route()                         |
+| lv:csrf-field   | csrf_token()                    |
+| lv:csrf-token   | csrf_token()                    |
+
+## Contact
+
+Please file any [issues](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues) or have a suggestion please tweet me [@onecentlin](https://twitter.com/onecentlin).
 
 ## Credits
 
 * Blade language grammar is based on [Medalink syntax definition](https://github.com/Medalink/laravel-blade) for Sublime Text.
 * Textmate language format file is based on [Textmate bundle for Laravel 5](https://github.com/loranger/Laravel.tmbundle).
+
+## License
+
+Please read [License](https://github.com/onecentlin/laravel-blade-snippets-vscode/blob/master/LICENSE.md) for more information
