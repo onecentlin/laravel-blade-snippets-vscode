@@ -39,14 +39,17 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 | b:forelse      | @forelse...@empty...@endforelse |
 | b:while        | @while...@endwhile              |
 | b:each         | @each                           |
-| b:comment      | {{-- comment --}}               |
 | b:push         | @push...@endpush                |
 | b:stack        | @stack                          |
 | b:inject       | @inject                         |
+| b:comment      | {{-- comment --}} or `Ctrl+/`   |
+| b:echo         | {{ $data }}                     |
+| b:echo-html    | {!! $html !!}                   |
+| b:echo-raw     | @{{ variable }}                 |
 
 ## Laravel Helper Snippets for Blade
 
-| Trigger         | Snippet                         |
+| Trigger         | Laravel Helper                  |
 |-----------------|---------------------------------|
 | lv:elixir       | elixir()                        |
 | lv:trans        | trans()                         |
@@ -55,7 +58,7 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 | lv:url          | url()                           |
 | lv:asset        | asset()                         |
 | lv:route        | route()                         |
-| lv:csrf-field   | csrf_token()                    |
+| lv:csrf-field   | csrf_field()                    |
 | lv:csrf-token   | csrf_token()                    |
 
 ## Contact

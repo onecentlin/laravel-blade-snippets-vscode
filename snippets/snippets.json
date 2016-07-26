@@ -140,6 +140,30 @@
 		"description": "Blade comment"
 	},
 
+	/* Display Data */
+
+	"blade echo-data": {
+		"prefix": "b:echo",
+		"body": [
+			"\\{\\{ ${1:\\$data} \\}\\}$2"
+		],
+		"description": "Blade echo data"
+	},
+	"blade echo-unescaped-data": {
+		"prefix": "b:echo-html",
+		"body": [
+			"\\{!! ${1:\\$html_data} !!\\}$2"
+		],
+		"description": "Blade echo unescaped data (allow html outputs)"
+	},
+	"blade echo-untouch": {
+		"prefix": "b:echo-raw",
+		"body": [
+			"@\\{\\{ ${1:variable} \\}\\}$2"
+		],
+		"description": "Blade echo untouched data (allow javascript expression)"
+	},
+
     /* Stacks */
     "Push stack": {
 		"prefix": "b:push",

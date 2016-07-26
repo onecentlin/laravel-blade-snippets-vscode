@@ -28,12 +28,12 @@
 		],
 		"description": "Laravel URL-action"
 	},
-    "URL-secure_asset": {
-		"prefix": "lv:secure_asset",
+    "URL-secure-asset": {
+		"prefix": "lv:secure-asset",
 		"body": [
 			"\\{\\{ secure_asset('$1', ${2:\\$title}, ${3:\\$attributes=[]}) \\}\\}$4"
 		],
-		"description": "Laravel URL-secure_asset"
+		"description": "Laravel URL-secure-asset"
 	},
     "URL-url": {
 		"prefix": "lv:url",
