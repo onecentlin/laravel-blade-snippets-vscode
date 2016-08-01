@@ -6,14 +6,14 @@
 		"body": [
 			"@extends('${1:name}')$2"
 		],
-		"description": "Extends view layout"
+		"description": "Blade - extends view layout"
 	},
 	"Yield content": {
 		"prefix": "b:yield",
 		"body": [
 			"@yield('${1:name}')$2"
 		],
-		"description": "Yield content section"
+		"description": "Blade - yield content section"
 	},
 	"Content Section": {
 		"prefix": "b:section",
@@ -22,7 +22,7 @@
 			"    $2",
 			"@endsection"
 		],
-		"description": "Content section"
+		"description": "Blade - content section"
 	},
     "Content Section Show": {
 		"prefix": "b:section-show",
@@ -31,7 +31,7 @@
 			"    $2",
 			"@show"
 		],
-		"description": "Content section show"
+		"description": "Blade - content section show"
 	},
 
     /* Include sub-view */
@@ -41,7 +41,7 @@
 		"body": [
 			"@include('${1:name}')$2"
 		],
-		"description": "Include view"
+		"description": "Blade - include view"
 	},
 
     /* If Statements */
@@ -53,7 +53,7 @@
 			"    $2",
 			"@endif"
 		],
-		"description": "if block"
+		"description": "Blade - @if block"
 	},
 	"If-else-block": {
 		"prefix": "b:if-else",
@@ -64,7 +64,7 @@
 			"    $3",
 			"@endif"
 		],
-		"description": "if-else block"
+		"description": "Blade - if-else block"
 	},
     "Has Section": {
 		"prefix": "b:has-section",
@@ -75,7 +75,7 @@
             "    $3",
             "@endif"
 		],
-		"description": "hasSection condition"
+		"description": "Blade - @hasSection condition"
 	},
 
     /* Loops */
@@ -87,7 +87,7 @@
 			"    $3",
 			"@endfor"
 		],
-		"description": "for block"
+		"description": "Blade - @for block"
 	},
 	"Foreach-block": {
 		"prefix": "b:foreach",
@@ -96,7 +96,7 @@
 			"    $3",
 			"@endforeach"
 		],
-		"description": "foreach block"
+		"description": "Blade - @foreach block"
 	},
 	"forelse-block": {
 		"prefix": "b:forelse",
@@ -107,7 +107,7 @@
 			"    $4",
 			"@endforelse"
 		],
-		"description": "forelse block"
+		"description": "Blade - @forelse block"
 	},
 	"while-block": {
 		"prefix": "b:while",
@@ -116,7 +116,7 @@
 			"    $2",
 			"@endwhile"
 		],
-		"description": "while block"
+		"description": "Blade - @while block"
 	},
 
     /* Rendering views for collections */
@@ -126,7 +126,7 @@
 		"body": [
             "@each('${1:view.name}', ${2:\\$collection}, '${3:variable}', '${4:view.empty}')$5"
 		],
-		"description": "each loop"
+		"description": "Blade - @each loop"
 	},
 
     /* Comments */
@@ -137,7 +137,7 @@
 			"\\{\\{-- ${1:comment} --\\}\\}",
             "$2"
 		],
-		"description": "Blade comment"
+		"description": "Blade - comment block"
 	},
 
 	/* Display Data */
@@ -147,21 +147,21 @@
 		"body": [
 			"\\{\\{ ${1:\\$data} \\}\\}$2"
 		],
-		"description": "Blade echo data"
+		"description": "Blade - echo data"
 	},
 	"blade echo-unescaped-data": {
 		"prefix": "b:echo-html",
 		"body": [
 			"\\{!! ${1:\\$html_data} !!\\}$2"
 		],
-		"description": "Blade echo unescaped data (allow html outputs)"
+		"description": "Blade - echo unescaped data (allow html outputs)"
 	},
 	"blade echo-untouch": {
 		"prefix": "b:echo-raw",
 		"body": [
 			"@\\{\\{ ${1:variable} \\}\\}$2"
 		],
-		"description": "Blade echo untouched data (allow javascript expression)"
+		"description": "Blade - echo untouched data (allow javascript expression)"
 	},
 
     /* Stacks */
@@ -172,14 +172,14 @@
             "    $2",
             "@endpush"
 		],
-		"description": "Push stack"
+		"description": "Blade - @push stack"
 	},
     "Stack": {
 		"prefix": "b:stack",
 		"body": [
 			"@stack('${1:name}')$2"
 		],
-		"description": "Stack"
+		"description": "Blade - @stack"
 	},
 
     /* Service Injection */
@@ -190,6 +190,6 @@
 			"@inject('${1:name}', '${2:class}')",
             "$3"
 		],
-		"description": "Inject Service"
+		"description": "Blade - @inject Service"
 	}
 }

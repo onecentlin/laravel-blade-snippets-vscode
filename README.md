@@ -20,6 +20,8 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
 ## Blade Syntax Hightlight
 
+![Language Mode](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/language-mode.png)
+
 * Auto detected with `.blade.php` extension
 * Manually switch language mode to `Laravel Blade` (`Ctrl + K, M` or `⌘ + K, M`)
 
@@ -54,7 +56,7 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 | lv:elixir       | elixir()                        |
 | lv:trans        | trans()                         |
 | lv:action       | action()                        |
-| lv:secure_asset | secure_asset()                  |
+| lv:secure-asset | secure_asset()                  |
 | lv:url          | url()                           |
 | lv:asset        | asset()                         |
 | lv:route        | route()                         |
