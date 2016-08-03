@@ -6,6 +6,34 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
 ![Demo](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshot.gif)
 
+## What's New in 1.3
+
+Support Laravel 5.3 blade syntax
+
+* `@verbatim` - displaying JavaScript variables in a large portion in template
+
+```
+@verbatim
+    <div class="container">
+        Hello, {{ name }}.
+    </div>
+@endverbatim
+```
+
+* `$loop` variable : index, remaining, count, first, last, depth, parent
+
+```
+$loop->index
+$loop->remaining
+$loop->count
+$loop->first
+$loop->last
+$loop->depth
+$loop->parent
+```
+
+* Add pagination links helper snippet: `lv:pagination-links`
+
 ## Features
 
 * Blade syntax highlight
@@ -48,6 +76,15 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 | b:echo         | {{ $data }}                     |
 | b:echo-html    | {!! $html !!}                   |
 | b:echo-raw     | @{{ variable }}                 |
+| b:verbatim     | @verbatim...@endverbatim  (v5.3)|
+
+### Laravel v5.3 - $loop variable
+
+| Trigger        | Snippet                         |
+|----------------|---------------------------------|
+| b:loop         | $loop->(index,remaining,count,first,last,depth,parent) |
+| b:loop-first   | @if($loop->first)...@endif      |
+| b:loop-last    | @if($loop->last)...@endif       |
 
 ## Laravel Helper Snippets for Blade
 
@@ -62,7 +99,7 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 | lv:route        | route()                         |
 | lv:csrf-field   | csrf_field()                    |
 | lv:csrf-token   | csrf_token()                    |
-| lv:pagination-links | $collection->links()             |
+| lv:pagination-links | $collection->links()        |
 
 ## Contact
 

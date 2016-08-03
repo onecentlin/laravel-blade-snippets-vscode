@@ -163,6 +163,15 @@
 		],
 		"description": "Blade - echo untouched data (allow javascript expression)"
 	},
+	"blade verbatim": {
+		"prefix": "b:verbatim",
+		"body": [
+			"@verbatim",
+			"\\{\\{ ${1:variable} \\}\\}$2",
+			"@endverbatim"
+		],
+		"description": "Blade - displaying JavaScript variables in a large portion of your template"
+	},
 
     /* Stacks */
     "Push stack": {
@@ -191,5 +200,35 @@
             "$3"
 		],
 		"description": "Blade - @inject Service"
+	},
+
+	/* v5.3 - $loop variable */
+
+	"loop": {
+		"prefix": "b:loop",
+		"body": [
+			"\\$loop->${1:first}$2"
+		],
+		"description": "Blade - $loop->(index|remaining|count|first|last|depth|parent)"
+	},
+	"loop first": {
+		"prefix": "b:loop-first",
+		"body": [
+			"@if ($loop->first)",
+			"    ${1:// This is the first iteration}",
+			"@endif",
+            "$2"
+		],
+		"description": "Blade - $loop->first"
+	},
+	"loop last": {
+		"prefix": "b:loop-last",
+		"body": [
+			"@if ($loop->last)",
+			"    ${1:// This is the last iteration}",
+			"@endif",
+            "$2"
+		],
+		"description": "Blade - $loop->last"
 	}
 }
