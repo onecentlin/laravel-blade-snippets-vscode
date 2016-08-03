@@ -2,6 +2,8 @@
 
 Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
+> Suggest Laravel related extension: [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets)
+
 ## Screenshot
 
 ![Demo](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshot.gif)
