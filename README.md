@@ -62,6 +62,7 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 | lv:route        | route()                         |
 | lv:csrf-field   | csrf_field()                    |
 | lv:csrf-token   | csrf_token()                    |
+| lv:pagination-links | $collection->links()             |
 
 ## Contact
 

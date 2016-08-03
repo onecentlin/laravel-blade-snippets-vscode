@@ -62,15 +62,25 @@
     "Form-csrf-field": {
         "prefix": "lv:csrf-field",
         "body": [
-            "\\{\\{ csrf_field() \\}\\}$2"
+            "\\{\\{ csrf_field() \\}\\}$1"
         ],
         "description": "Laravel CSRF hidden field"
     },
     "csrf-token": {
         "prefix": "lv:csrf-token",
         "body": [
-            "\\{\\{ csrf_token() \\}\\}$2"
+            "\\{\\{ csrf_token() \\}\\}$1"
         ],
         "description": "Laravel CSRF token"
+    },
+
+	// Paginate
+
+	"Paginate-links": {
+        "prefix": "lv:pagination-links",
+        "body": [
+            "\\{\\{ \\$${1:users}->links() \\}\\}$2"
+        ],
+        "description": "Laravel pagination links"
     }
 }
