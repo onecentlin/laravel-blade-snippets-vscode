@@ -8,7 +8,25 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
 ![Demo](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshot.gif)
 
-## What's New in 1.3
+## Important update change (VS Code 1.5+)
+
+Open `Preferences` -> `User Settings`
+
+Add below settings to enable Emmet for blade:
+
+```
+"emmet.syntaxProfiles": {
+    "blade": "html"
+},
+```
+
+## What's New
+
+### 1.4
+
+Update language mode recognition and emmet setting for VS Code 1.5+
+
+### 1.3
 
 Support Laravel 5.3 blade syntax
 
@@ -41,12 +59,6 @@ $loop->parent
 * Blade syntax highlight
 * Laravel blade snippets
 * Emmet works in blade template
-
-## Installation
-
-* Press `Ctrl + Shift + P` or `⌘ + Shift + P`
-* Pick `Extensions: Install Extensions`
-* Search `Laravel Blade Snippets` and Install
 
 ## Blade Syntax Hightlight
 
