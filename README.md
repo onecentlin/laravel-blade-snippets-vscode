@@ -14,45 +14,11 @@ Open `Preferences` -> `User Settings`
 
 Add below settings to enable Emmet for blade:
 
-```
+```json
 "emmet.syntaxProfiles": {
     "blade": "html"
 },
 ```
-
-## What's New
-
-### 1.4
-
-Update language mode recognition and emmet setting for VS Code 1.5+
-
-### 1.3
-
-Support Laravel 5.3 blade syntax
-
-* `@verbatim` - displaying JavaScript variables in a large portion in template
-
-```
-@verbatim
-    <div class="container">
-        Hello, {{ name }}.
-    </div>
-@endverbatim
-```
-
-* `$loop` variable : index, remaining, count, first, last, depth, parent
-
-```
-$loop->index
-$loop->remaining
-$loop->count
-$loop->first
-$loop->last
-$loop->depth
-$loop->parent
-```
-
-* Add pagination links helper snippet: `lv:pagination-links`
 
 ## Features
 
@@ -91,6 +57,8 @@ $loop->parent
 | b:echo-html    | {!! $html !!}                   |
 | b:echo-raw     | @{{ variable }}                 |
 | b:verbatim     | @verbatim...@endverbatim  (v5.3)|
+| b:php          | @php...@endphp  (v5.3)          |
+| b:includeIf    | @includeIf  (v5.3)              |
 
 ### Laravel v5.3 - $loop variable
 

@@ -230,5 +230,21 @@
             "$2"
 		],
 		"description": "Blade - $loop->last"
+	},
+	"php": {
+		"prefix": "b:php",
+		"body": [
+			"@php",
+			"    $1",
+			"@endphp"
+		],
+		"description": "Blade - @php block code in view"
+	},
+	"includeIf": {
+		"prefix": "b:includeIf",
+		"body": [
+			"@includeIf('${1:view.name}'${2:, ['some' => 'data']})$3"
+		],
+		"description": "Blade -  include a view that may or may not be present, you should use the @includeIf directive"
 	}
 }

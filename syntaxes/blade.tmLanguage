@@ -112,7 +112,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(\s{0}|^)(\@)\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject)\b(?=(|\s*|)\()</string>
+			<string>(\s{0}|^)(\@)\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|php|includeIf)\b(?=(|\s*|)\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -193,7 +193,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(\s{0}|^)(\@)\b(endif|endforelse|endforeach|endfor|endwhile|else|endunless|show|stop|endsection|parent|overwrite|endpush|continue|break|empty)\b</string>
+			<string>(\s{0}|^)(\@)\b(endif|endforelse|endforeach|endfor|endwhile|else|endunless|show|stop|endsection|parent|overwrite|endpush|continue|break|empty|endphp)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
