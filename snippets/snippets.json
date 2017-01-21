@@ -134,7 +134,7 @@
 	"blade comment": {
 		"prefix": "b:comment",
 		"body": [
-			"\\{\\{-- ${1:comment} --\\}\\}",
+			"{{-- ${1:comment} --}}",
             "$2"
 		],
 		"description": "Blade - comment block"
@@ -145,21 +145,21 @@
 	"blade echo-data": {
 		"prefix": "b:echo",
 		"body": [
-			"\\{\\{ ${1:\\$data} \\}\\}$2"
+			"{{ ${1:\\$data} }}$2"
 		],
 		"description": "Blade - echo data"
 	},
 	"blade echo-unescaped-data": {
 		"prefix": "b:echo-html",
 		"body": [
-			"\\{!! ${1:\\$html_data} !!\\}$2"
+			"{!! ${1:\\$html_data} !!}$2"
 		],
 		"description": "Blade - echo unescaped data (allow html outputs)"
 	},
 	"blade echo-untouch": {
 		"prefix": "b:echo-raw",
 		"body": [
-			"@\\{\\{ ${1:variable} \\}\\}$2"
+			"@{{ ${1:variable} }}$2"
 		],
 		"description": "Blade - echo untouched data (allow javascript expression)"
 	},
@@ -167,7 +167,7 @@
 		"prefix": "b:verbatim",
 		"body": [
 			"@verbatim",
-			"\\{\\{ ${1:variable} \\}\\}$2",
+			"{{ ${1:variable} }}$2",
 			"@endverbatim"
 		],
 		"description": "Blade - displaying JavaScript variables in a large portion of your template"
