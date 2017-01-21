@@ -245,6 +245,27 @@
 		"body": [
 			"@includeIf('${1:view.name}'${2:, ['some' => 'data']})$3"
 		],
-		"description": "Blade -  include a view that may or may not be present, you should use the @includeIf directive"
+		"description": "Blade - include a view that may or may not be present, you should use the @includeIf directive"
+	},
+
+	/* v5.4 */
+
+	"component": {
+		"prefix": "b:component",
+		"body": [
+			"@component('$1')",
+			"    $2",
+			"@endcomponent"
+		],
+		"description": "Blade - component"
+	},
+	"slot": {
+		"prefix": "b:slot",
+		"body": [
+			"@slot('$1')",
+			"    $2",
+			"@endslot"
+		],
+		"description": "Blade - slot"
 	}
 }

@@ -52,13 +52,15 @@ Add below settings to enable Emmet for blade:
 | b:push         | @push...@endpush                |
 | b:stack        | @stack                          |
 | b:inject       | @inject                         |
-| b:comment      | {{-- comment --}} or `Ctrl+/`   |
+| b:comment      | {{-- comment --}}  (`Ctrl+/`)   |
 | b:echo         | {{ $data }}                     |
 | b:echo-html    | {!! $html !!}                   |
 | b:echo-raw     | @{{ variable }}                 |
 | b:verbatim     | @verbatim...@endverbatim  (v5.3)|
 | b:php          | @php...@endphp  (v5.3)          |
 | b:includeIf    | @includeIf  (v5.3)              |
+| b:component    | @component...@endcomponent (v5.4)|
+| b:slot         | @slot...@endslot (v5.4)         |
 
 ### Laravel v5.3 - $loop variable
 

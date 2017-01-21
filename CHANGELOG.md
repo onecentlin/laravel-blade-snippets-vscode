@@ -1,3 +1,8 @@
+## 1.6
+
+- Support `@component` and `@slot` directive added in Laravel 5.4
+- Fix #3 issue
+
 ## 1.5
 
 Support new directive added in Laravel 5.3
