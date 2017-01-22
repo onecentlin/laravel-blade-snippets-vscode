@@ -4,7 +4,7 @@
     "Path-elixir": {
 		"prefix": "lv:elixir",
 		"body": [
-			"\\{\\{ elixir('${1:file}') \\}\\}$2"
+			"{{ elixir('${1:file}') }}$2"
 		],
 		"description": "Laravel Path-elixir"
 	},
@@ -14,7 +14,7 @@
     "String-trans": {
 		"prefix": "lv:trans",
 		"body": [
-			"\\{\\{ trans('$1') \\}\\}$2"
+			"{{ trans('$1') }}$2"
 		],
 		"description": "Laravel String-trans"
 	},
@@ -24,35 +24,35 @@
     "URL-action": {
 		"prefix": "lv:action",
 		"body": [
-			"\\{\\{ action('${1:ControllerName}', [${2:'id'=>1}]) \\}\\}$3"
+			"{{ action('${1:ControllerName}', [${2:'id'=>1}]) }}$3"
 		],
 		"description": "Laravel URL-action"
 	},
     "URL-secure-asset": {
 		"prefix": "lv:secure-asset",
 		"body": [
-			"\\{\\{ secure_asset('$1', ${2:\\$title}, ${3:\\$attributes=[]}) \\}\\}$4"
+			"{{ secure_asset('$1', ${2:\\$title}, ${3:\\$attributes=[]}) }}$4"
 		],
 		"description": "Laravel URL-secure-asset"
 	},
     "URL-url": {
 		"prefix": "lv:url",
 		"body": [
-			"\\{\\{ url('${1:url}', [$2]) \\}\\}$3"
+			"{{ url('${1:url}', [$2]) }}$3"
 		],
 		"description": "Laravel URL-url"
 	},
     "URL-asset": {
 		"prefix": "lv:asset",
 		"body": [
-			"\\{\\{ asset('$1') \\}\\}$2"
+			"{{ asset('$1') }}$2"
 		],
 		"description": "Laravel URL-asset"
 	},
     "URL-route": {
 		"prefix": "lv:route",
 		"body": [
-			"\\{\\{ route('${1:routeName}', [${2:'id'=>1}]) \\}\\}$3"
+			"{{ route('${1:routeName}', [${2:'id'=>1}]) }}$3"
 		],
 		"description": "Laravel URL-route"
 	},
@@ -62,14 +62,14 @@
     "Form-csrf-field": {
         "prefix": "lv:csrf-field",
         "body": [
-            "\\{\\{ csrf_field() \\}\\}$1"
+            "{{ csrf_field() }}$1"
         ],
         "description": "Laravel CSRF hidden field"
     },
     "csrf-token": {
         "prefix": "lv:csrf-token",
         "body": [
-            "\\{\\{ csrf_token() \\}\\}$1"
+            "{{ csrf_token() }}$1"
         ],
         "description": "Laravel CSRF token"
     },
@@ -79,7 +79,7 @@
 	"Paginate-links": {
         "prefix": "lv:pagination-links",
         "body": [
-            "\\{\\{ \\$${1:users}->links() \\}\\}$2"
+            "{{ \\$${1:collection}->links() }}$2"
         ],
         "description": "Laravel pagination links"
     }

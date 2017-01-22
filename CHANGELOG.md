@@ -1,3 +1,7 @@
+## 1.6.1
+
+- Fix extra slashes in `lv:*` helper snippets
+
 ## 1.6
 
 - Support `@component` and `@slot` directive added in Laravel 5.4
