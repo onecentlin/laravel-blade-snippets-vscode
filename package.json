@@ -44,7 +44,7 @@
         "grammars": [{
             "language": "blade",
             "scopeName": "text.html.php.laravel-blade",
-            "path": "./syntaxes/blade.tmLanguage"
+            "path": "./syntaxes/blade.tmLanguage.json"
         }],
         "snippets": [{
             "language": "blade",
