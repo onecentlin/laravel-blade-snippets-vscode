@@ -2127,7 +2127,7 @@
                 }
             ],
             "comment": "Laravel Blade Stock Compiler Calls",
-            "end": "\\)(?!.*\\))",
+            "end": "(?<=\\))",
             "endCaptures": {
                 "0": {
                     "name": "compiler.bounds.laravel-blade"
@@ -2136,7 +2136,7 @@
             "name": "source.php.embedded.line.html"
         },
         {
-            "begin": "(\\s{0}|^)(\\@)\\b(.+)\\b(?=(|\\s*|)\\()",
+            "begin": "(\\s{0}|^)(\\@)\\b([a-zA-Z_]+)\\b(?=(|\\s*|)\\()",
             "beginCaptures": {
                 "0": {
                     "name": "entity.name.tag.laravel-blade"
@@ -2151,7 +2151,7 @@
                 }
             ],
             "comment": "Laravel Blade Custom Compiler Calls",
-            "end": "\\)",
+            "end": "(?<=\\))",
             "endCaptures": {
                 "1": {
                     "name": "compiler.bounds.laravel-blade"
@@ -2201,7 +2201,7 @@
             "name": "source.php.embedded.line.html"
         },
         {
-            "begin": "(((?<=\\?>)<)|<)\\?(?i:php|=)?",
+            "begin": "(((?<=\\?>)<)|<)\\?(?i:php|=)?|((\\s{0}|^)(@)(php))",
             "beginCaptures": {
                 "0": {
                     "name": "punctuation.section.embedded.begin.php"
@@ -2216,7 +2216,7 @@
                 }
             ],
             "comment": "Catches the remainder.",
-            "end": "(\\?)>",
+            "end": "(\\?)>|((\\s{0}|^)(@)(endphp))",
             "endCaptures": {
                 "0": {
                     "name": "punctuation.section.embedded.end.php"
