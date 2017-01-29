@@ -214,8 +214,8 @@
 	"loop first": {
 		"prefix": "b:loop-first",
 		"body": [
-			"@if ($loop->first)",
-			"    ${1:// This is the first iteration}",
+			"@if (\\$loop->first)",
+			"    ${1:{{-- This is the first iteration --\\}\\}}",
 			"@endif",
             "$2"
 		],
@@ -224,8 +224,8 @@
 	"loop last": {
 		"prefix": "b:loop-last",
 		"body": [
-			"@if ($loop->last)",
-			"    ${1:// This is the last iteration}",
+			"@if (\\$loop->last)",
+			"    ${1:{{-- This is the last iteration --\\}\\}}",
 			"@endif",
             "$2"
 		],
