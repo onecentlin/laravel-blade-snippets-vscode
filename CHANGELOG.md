@@ -1,3 +1,8 @@
+## 1.7.0
+
+- Enhance blade syntax highlighting
+- Fix loop snippets
+
 ## 1.6.1
 
 - Fix extra slashes in `lv:*` helper snippets
