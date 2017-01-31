@@ -2127,7 +2127,7 @@
                 }
             ],
             "comment": "Laravel Blade Stock Compiler Calls",
-            "end": "(?<=\\))",
+            "end": "\\)(?!.*\\))",
             "endCaptures": {
                 "0": {
                     "name": "compiler.bounds.laravel-blade"

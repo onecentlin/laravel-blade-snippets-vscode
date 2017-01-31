@@ -1,6 +1,10 @@
+## 1.8.1
+
+- Fix syntax parse failed [#5](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/5)
+
 ## 1.8.0
 
-- Add `@can`, `@elsecan`, `@endcan`, `@cannot`, `@elsecannot` and `@endcannot` directives ([#4](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/4))
+- Add `@can` and `@cannot` related directives ([#4](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/4))
 - Add `b:can`, `b:can-elsecan`, `b:cannot`, `b:cannot-elsecannot` authorizing snippets ([#4](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/4))
 - Add `lv:mix` helper
 - Fix for loop snippet
