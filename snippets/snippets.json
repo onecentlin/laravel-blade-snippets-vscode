@@ -83,7 +83,7 @@
 	"For-block": {
 		"prefix": "b:for",
 		"body": [
-			"@for($i = ${1:0}; $i < ${2:\\$count}; $i++)",
+			"@for(\\$i = ${1:0}; \\$i < ${2:\\$count}; \\$i++)",
 			"    $3",
 			"@endfor"
 		],
@@ -200,6 +200,49 @@
             "$3"
 		],
 		"description": "Blade - @inject Service"
+	},
+
+	/* Authorizing */
+
+	"can": {
+		"prefix": "b:can",
+		"body": [
+			"@can('${1:update}', ${2:Model}::class)",
+			"\t$3",
+			"@endcan"
+		],
+		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
+	},
+	"can-elsecan": {
+		"prefix": "b:can-elsecan",
+		"body": [
+			"@can('${1:update}', ${2:\\$post})",
+			"\t$3",
+			"@elsecan('${4:create}', $2)",
+			"\t$5",
+			"@endcan"
+		],
+		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
+	},
+	"cannot": {
+		"prefix": "b:cannot",
+		"body": [
+			"@cannot('${1:update}', ${2:Model}::class)",
+			"\t$3",
+			"@endcannot"
+		],
+		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
+	},
+	"can-elsecannot": {
+		"prefix": "b:cannot-elsecannot",
+		"body": [
+			"@cannot('${1:update}', ${2:\\$post})",
+			"\t$3",
+			"@elsecannot('${4:create}', $2)",
+			"\t$5",
+			"@endcannot"
+		],
+		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
 	},
 
 	/* v5.3 - $loop variable */

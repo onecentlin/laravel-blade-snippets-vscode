@@ -2109,7 +2109,7 @@
             "name": "embedded.line.html"
         },
         {
-            "begin": "(\\s{0}|^)(\\@)\\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|php|includeIf|component|slot)\\b(?=(|\\s*|)\\()",
+            "begin": "(\\s{0}|^)(\\@)\\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|includeIf|component|slot|can|elsecan|cannot|elsecannot)\\b(?=(|\\s*|)\\()",
             "beginCaptures": {
                 "3": {
                     "name": "entity.name.tag.laravel-blade"
@@ -2160,7 +2160,7 @@
             "name": "source.php.embedded.line.html"
         },
         {
-            "begin": "(\\s{0}|^)(\\@)\\b(endif|endforelse|endforeach|endfor|endwhile|else|endunless|show|stop|endsection|parent|overwrite|endpush|continue|break|empty|verbatim|endverbatim|php|endphp|endcomponent|endslot)\\b",
+            "begin": "(\\s{0}|^)(\\@)\\b(endif|endforelse|endforeach|endfor|endwhile|else|endunless|show|stop|endsection|parent|overwrite|endpush|continue|break|empty|verbatim|endverbatim|php|endphp|endcomponent|endslot|endcan|endcannot)\\b",
             "beginCaptures": {
                 "3": {
                     "name": "entity.name.tag.laravel-blade"
@@ -2201,7 +2201,7 @@
             "name": "source.php.embedded.line.html"
         },
         {
-            "begin": "(((?<=\\?>)<)|<)\\?(?i:php|=)?|((\\s{0}|^)(@)(php))",
+            "begin": "(((?<=\\?>)<)|<)\\?(?i:php|=)?|(\\s{0}|^)(\\@)\\b(php)\\b",
             "beginCaptures": {
                 "0": {
                     "name": "punctuation.section.embedded.begin.php"
@@ -2216,7 +2216,7 @@
                 }
             ],
             "comment": "Catches the remainder.",
-            "end": "(\\?)>|((\\s{0}|^)(@)(endphp))",
+            "end": "(\\?)>|(\\s{0}|^)(\\@)\\b(endphp)\\b",
             "endCaptures": {
                 "0": {
                     "name": "punctuation.section.embedded.end.php"

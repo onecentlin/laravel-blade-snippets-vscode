@@ -190,3 +190,34 @@ This comment will not be in the rendered HTML
 {{-- Replacing Parameters In Translation Strings --}}
 {{-- 'greeting' => 'Welcome, :name', --}}
 {{ __('messages.greeting', ['name' => 'Winnie']) }}
+
+
+{{-- Authorizing --}}
+
+@can('update', $post)
+    <!-- The Current User Can Update The Post -->
+@elsecan('create', $post)
+    <!-- The Current User Can Create New Post -->
+@endcan
+
+@cannot('update', $post)
+    <!-- The Current User Can't Update The Post -->
+@elsecannot('create', $post)
+    <!-- The Current User Can't Create New Post -->
+@endcannot
+
+@if (Auth::user()->can('update', $post))
+    <!-- The Current User Can Update The Post -->
+@endif
+
+@unless (Auth::user()->can('update', $post))
+    <!-- The Current User Can't Update The Post -->
+@endunless
+
+@can('create', Post::class)
+    <!-- The Current User Can Create Posts -->
+@endcan
+
+@cannot('create', Post::class)
+    <!-- The Current User Can't Create Posts -->
+@endcannot

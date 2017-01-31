@@ -9,6 +9,14 @@
 		"description": "Laravel Path-elixir"
 	},
 
+	"Path-mix": {
+		"prefix": "lv:mix",
+		"body": [
+			"{{ mix('${1:file}') }}$2"
+		],
+		"description": "Laravel Path-mix"
+	},
+
     // Strings
 
     "String-trans": {

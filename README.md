@@ -56,6 +56,10 @@ Add below settings to enable Emmet for blade:
 | b:echo         | {{ $data }}                     |
 | b:echo-html    | {!! $html !!}                   |
 | b:echo-raw     | @{{ variable }}                 |
+| b:can          | @can...@endcan (v5.1)           |
+| b:can-elsecan  | @can...@elsecan...@endcan (v5.1)|
+| b:cannot       | @cannot...@endcannot (v5.3)     |
+| b:cannot-elsecannot | @cannot...@elsecannot...@endcannot (v5.3) |
 | b:verbatim     | @verbatim...@endverbatim  (v5.3)|
 | b:php          | @php...@endphp  (v5.3)          |
 | b:includeIf    | @includeIf  (v5.3)              |
@@ -75,6 +79,7 @@ Add below settings to enable Emmet for blade:
 | Trigger         | Laravel Helper                  |
 |-----------------|---------------------------------|
 | lv:elixir       | elixir()                        |
+| lv:mix          | mix()  (v5.4)                   |
 | lv:trans        | trans()                         |
 | lv:action       | action()                        |
 | lv:secure-asset | secure_asset()                  |

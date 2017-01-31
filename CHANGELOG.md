@@ -1,3 +1,10 @@
+## 1.8.0
+
+- Add `@can`, `@elsecan`, `@endcan`, `@cannot`, `@elsecannot` and `@endcannot` directives ([#4](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/4))
+- Add `b:can`, `b:can-elsecan`, `b:cannot`, `b:cannot-elsecannot` authorizing snippets ([#4](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/4))
+- Add `lv:mix` helper
+- Fix for loop snippet
+
 ## 1.7.0
 
 - Enhance blade syntax highlighting
@@ -10,7 +17,7 @@
 ## 1.6
 
 - Support `@component` and `@slot` directive added in Laravel 5.4
-- Fix #3 issue
+- Fix [#3](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/3) issue
 
 ## 1.5
 
