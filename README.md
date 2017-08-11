@@ -15,7 +15,7 @@ Open `Preferences` -> `User Settings`
 Add below settings to enable Emmet for blade:
 
 ```json
-"emmet.syntaxProfiles": {
+"emmet.includeLanguages": {
     "blade": "html"
 },
 ```
