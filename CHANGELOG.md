@@ -1,3 +1,7 @@
+## 1.8.2
+
+- Update README ([#18](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/18), [#19](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/19))
+
 ## 1.8.1
 
 - Fix syntax parse failed [#5](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/5)
