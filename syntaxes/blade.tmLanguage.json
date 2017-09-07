@@ -2109,7 +2109,7 @@
             "name": "embedded.line.html"
         },
         {
-            "begin": "(\\s{0}|^)(\\@)\\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|includeIf|component|slot|can|elsecan|cannot|elsecannot)\\b(?=(|\\s*|)\\()",
+            "begin": "(\\s{0}|^)(\\@)\\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|includeIf|component|slot|can|elsecan|cannot|elsecannot|isset|empty|includeWhen|switch|case)\\b(?=(|\\s*|)\\()",
             "beginCaptures": {
                 "3": {
                     "name": "entity.name.tag.laravel-blade"
@@ -2160,7 +2160,7 @@
             "name": "source.php.embedded.line.html"
         },
         {
-            "begin": "(\\s{0}|^)(\\@)\\b(endif|endforelse|endforeach|endfor|endwhile|else|endunless|show|stop|endsection|parent|overwrite|endpush|continue|break|empty|verbatim|endverbatim|php|endphp|endcomponent|endslot|endcan|endcannot)\\b",
+            "begin": "(\\s{0}|^)(\\@)\\b(endif|endforelse|endforeach|endfor|endwhile|else|endunless|show|stop|endsection|parent|overwrite|endpush|continue|break|empty|verbatim|endverbatim|php|endphp|endcomponent|endslot|endcan|endcannot|endisset|endempty|auth|endauth|guest|endguest|default|endswitch)\\b",
             "beginCaptures": {
                 "3": {
                     "name": "entity.name.tag.laravel-blade"

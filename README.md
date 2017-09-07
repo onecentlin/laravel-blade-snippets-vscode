@@ -70,8 +70,14 @@ Add below settings to enable Emmet for blade:
 | b:includeIf    | @includeIf  (v5.3)              |
 | b:component    | @component...@endcomponent (v5.4)|
 | b:slot         | @slot...@endslot (v5.4)         |
+| b:includeWhen  | @includeWhen (v5.4)             |
+| b:isset        | @isset...@endisset (v5.4)       |
+| b:empty        | @empty...@endempty (v5.4)       |
+| b:auth         | @auth...@endauth (v5.5)         |
+| b:guest        | @guest...@endguest (v5.5)       |
+| b:switch       | @switch...@case...@endswitch (v5.5)   |
 
-### Laravel v5.3 - $loop variable
+### $loop variable (Laravel v5.3+)
 
 | Trigger        | Snippet                         |
 |----------------|---------------------------------|

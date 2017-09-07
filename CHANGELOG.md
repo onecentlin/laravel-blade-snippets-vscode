@@ -1,3 +1,14 @@
+## 1.9.0
+
+Laravel 5.4 blade directives & snippets:
+
+- Add `@isset`, `@empty`, `@includeWhen` directives
+- Add `b:isset`, `b:empty`, `b:includeWhen` snippets
+
+Laravel 5.5 blade directives & snippets:
+
+- Add `@auth`, `@guest`, `@switch`, `@case`, `@default` directives
+- Add `b:auth`, `b:guest`, `b:switch` snippets
 ## 1.8.2
 
 - Update README ([#18](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/18), [#19](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/19))

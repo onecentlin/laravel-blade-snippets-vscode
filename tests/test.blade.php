@@ -38,6 +38,15 @@ Hello, @{{ name }}.
     You are not signed in.
 @endunless
 
+
+@isset($records)
+    // $records is defined and is not null...
+@endisset
+
+@empty($records)
+    // $records is "empty"...
+@endempty
+
 {{-- Loops --}}
 
 @for ($i = 0; $i < 10; $i++)
@@ -154,6 +163,7 @@ This comment will not be in the rendered HTML
 @include('view.name')
 @include('view.name', ['some' => 'data'])
 @includeIf('view.name', ['some' => 'data'])
+@includeWhen($boolean, 'view.name', ['some' => 'data'])
 
 {{-- Rendering Views For Collections --}}
 @each('view.name', $jobs, 'job')
@@ -221,3 +231,26 @@ This comment will not be in the rendered HTML
 @cannot('create', Post::class)
     <!-- The Current User Can't Create Posts -->
 @endcannot
+
+{{--  Authentication Shortcuts  --}}
+@auth
+    // The user is authenticated...
+@endauth
+
+@guest
+    // The user is not authenticated...
+@endguest
+
+{{--  Switch Statements  --}}
+@switch($i)
+    @case(1)
+        First case...
+        @break
+
+    @case(2)
+        Second case...
+        @break
+
+    @default
+        Default case...
+@endswitch

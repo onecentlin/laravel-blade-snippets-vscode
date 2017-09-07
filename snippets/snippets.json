@@ -310,5 +310,67 @@
 			"@endslot"
 		],
 		"description": "Blade - slot"
+	},
+	"isset": {
+		"prefix": "b:isset",
+		"body": [
+			"@isset(${1:\\$record})",
+			"    $2",
+			"@endisset"
+		],
+		"description": "Blade - isset"
+	},
+	"empty": {
+		"prefix": "b:empty",
+		"body": [
+			"@empty(${1:\\$record})",
+			"    $2",
+			"@endempty"
+		],
+		"description": "Blade - empty"
+	},
+	"includeWhen": {
+		"prefix": "b:includeWhen",
+		"body": [
+			"@includeWhen(${1:\\$boolean}, '${2:view.name}', [${3:'some' => 'data'}])"
+		],
+		"description": "Blade - includeWhen"
+	},
+
+	/* v5.5 */
+
+	"auth": {
+		"prefix": "b:auth",
+		"body": [
+			"@auth",
+			"    $1",
+			"@endauth"
+		],
+		"description": "Blade - auth"
+	},
+	"guest": {
+		"prefix": "b:guest",
+		"body": [
+			"@guest",
+			"    $1",
+			"@endguest"
+		],
+		"description": "Blade - guest"
+	},
+	"switch": {
+		"prefix": "b:switch",
+		"body": [
+			"@switch(${1:\\$type})",
+			"    @case(${2:1})",
+			"        $3",
+			"        @break",
+			"    @case(${4:2})",
+			"        $5",
+			"        @break",
+			"    @default",
+			"        $6",
+			"@endswitch"
+		],
+		"description": "Blade - switch"
 	}
 }
