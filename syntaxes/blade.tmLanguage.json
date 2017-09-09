@@ -2004,7 +2004,7 @@
                     "begin": "(array)\\s*(\\()",
                     "beginCaptures": {
                         "1": {
-                            "name": "support.function.construct.php"
+                            "name": "support.constant.construct.php"
                         },
                         "2": {
                             "name": "punctuation.definition.array.begin.php"
@@ -2112,13 +2112,13 @@
             "begin": "(\\s{0}|^)(\\@)\\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|includeIf|component|slot|can|elsecan|cannot|elsecannot|isset|empty|includeWhen|switch|case)\\b(?=(|\\s*|)\\()",
             "beginCaptures": {
                 "3": {
-                    "name": "entity.name.tag.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 },
                 "1": {
-                    "name": "support.constant.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 },
                 "2": {
-                    "name": "support.constant.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 }
             },
             "patterns": [
@@ -2139,10 +2139,10 @@
             "begin": "(\\s{0}|^)(\\@)\\b([a-zA-Z_]+)\\b(?=(|\\s*|)\\()",
             "beginCaptures": {
                 "0": {
-                    "name": "entity.name.tag.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 },
                 "1": {
-                    "name": "entity.name.tag.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 }
             },
             "patterns": [
@@ -2163,13 +2163,13 @@
             "begin": "(\\s{0}|^)(\\@)\\b(endif|endforelse|endforeach|endfor|endwhile|else|endunless|show|stop|endsection|parent|overwrite|endpush|continue|break|empty|verbatim|endverbatim|php|endphp|endcomponent|endslot|endcan|endcannot|endisset|endempty|auth|endauth|guest|endguest|default|endswitch)\\b",
             "beginCaptures": {
                 "3": {
-                    "name": "entity.name.tag.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 },
                 "1": {
-                    "name": "support.constant.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 },
                 "2": {
-                    "name": "support.constant.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 }
             },
             "patterns": [
@@ -2185,10 +2185,10 @@
             "begin": "(\\s{0}|^)(\\@)\\b([a-zA-Z_]+)\\b(\\s?)\\b",
             "beginCaptures": {
                 "0": {
-                    "name": "entity.name.tag.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 },
                 "1": {
-                    "name": "entity.name.tag.laravel-blade"
+                    "name": "entity.name.function.laravel-blade"
                 }
             },
             "patterns": [
