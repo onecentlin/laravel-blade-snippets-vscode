@@ -2004,7 +2004,7 @@
                     "begin": "(array)\\s*(\\()",
                     "beginCaptures": {
                         "1": {
-                            "name": "support.constant.construct.php"
+                            "name": "support.function.construct.php"
                         },
                         "2": {
                             "name": "punctuation.definition.array.begin.php"
