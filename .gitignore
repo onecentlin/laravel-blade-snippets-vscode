@@ -1,1 +1,4 @@
-.vscode/**/*
+out
+node_modules
+*.vsix
+**/*.log

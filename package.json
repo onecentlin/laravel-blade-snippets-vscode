@@ -34,24 +34,56 @@
         "Languages",
         "Snippets"
     ],
+    "main": "./out/src/extension",
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
     "contributes": {
-        "languages": [{
-            "id": "blade",
-            "aliases": ["Laravel Blade", "Blade", "blade"],
-            "extensions": [".blade.php"],
-            "configuration": "./blade.configuration.json"
-        }],
-        "grammars": [{
-            "language": "blade",
-            "scopeName": "text.html.php.laravel-blade",
-            "path": "./syntaxes/blade.tmLanguage.json"
-        }],
-        "snippets": [{
-            "language": "blade",
-            "path": "./snippets/snippets.json"
-        }, {
-            "language": "blade",
-            "path": "./snippets/helpers.json"
-        }]
+        "languages": [
+            {
+                "id": "blade",
+                "aliases": [
+                    "Laravel Blade",
+                    "Blade",
+                    "blade"
+                ],
+                "extensions": [
+                    ".blade.php"
+                ],
+                "configuration": "./blade.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "blade",
+                "scopeName": "text.html.php.laravel-blade",
+                "path": "./syntaxes/blade.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "blade",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "blade",
+                "path": "./snippets/helpers.json"
+            }
+        ]
+    },
+    "activationEvents": [
+        "onLanguage:blade"
+    ],
+    "devDependencies": {
+        "@types/node": "^8.0.17",
+        "vscode": "^1.1.4"
+    },
+    "dependencies": {
+        "vscode-css-languageservice": "^2.1.1",
+        "vscode-html-languageservice": "^2.0.5",
+        "vscode-languageserver-types": "^3.3.0"
     }
 }
