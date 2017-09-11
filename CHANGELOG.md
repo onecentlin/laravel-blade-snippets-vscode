@@ -9,6 +9,11 @@ Laravel 5.5 blade directives & snippets:
 
 - Add `@auth`, `@guest`, `@switch`, `@case`, `@default` directives
 - Add `b:auth`, `b:guest`, `b:switch` snippets
+
+Syntax Enhancement
+
+- Change grammar of blade directive ([@mikebronner](https://github.com/mikebronner) - [PR #23](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/23))
+
 ## 1.8.2
 
 - Update README ([#18](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/18), [#19](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/19))
