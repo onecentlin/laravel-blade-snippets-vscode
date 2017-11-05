@@ -2115,10 +2115,10 @@
                     "name": "entity.name.function.laravel-blade"
                 },
                 "1": {
-                    "name": "entity.name.function.laravel-blade"
+                    "name": "support.constant.laravel-blade"
                 },
                 "2": {
-                    "name": "entity.name.function.laravel-blade"
+                    "name": "support.constant.laravel-blade"
                 }
             },
             "patterns": [
@@ -2142,7 +2142,7 @@
                     "name": "entity.name.function.laravel-blade"
                 },
                 "1": {
-                    "name": "entity.name.function.laravel-blade"
+                    "name": "support.constant.laravel-blade"
                 }
             },
             "patterns": [
@@ -2166,10 +2166,10 @@
                     "name": "entity.name.function.laravel-blade"
                 },
                 "1": {
-                    "name": "entity.name.function.laravel-blade"
+                    "name": "support.constant.laravel-blade"
                 },
                 "2": {
-                    "name": "entity.name.function.laravel-blade"
+                    "name": "support.constant.laravel-blade"
                 }
             },
             "patterns": [
