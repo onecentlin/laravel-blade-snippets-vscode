@@ -1,3 +1,8 @@
+## 1.10.0
+
+- Update syntax highlighting
+- Added `Document Highlight Provider` and `Document Format Provider` ([@TheColorRed](https://github.com/TheColorRed) - [PR #17](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/17))
+
 ## 1.9.0
 
 Laravel 5.4 blade directives & snippets:
