@@ -64,7 +64,7 @@
 			"    $3",
 			"@endif"
 		],
-		"description": "Blade - if-else block"
+		"description": "Blade - @if-else block"
 	},
     "Has Section": {
 		"prefix": "b:has-section",
