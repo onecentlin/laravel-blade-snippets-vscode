@@ -1,3 +1,7 @@
+## 1.11.0
+- Fix indent issue #9, #35 ([@izcream](https://github.com/izcream)) - [PR #38](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/38)
+- Fix minor whitespace inconsistencies ([@raniesantos](https://github.com/raniesantos)) - [PR #28](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/28/files)
+
 ## 1.10.0
 
 - Update syntax highlighting

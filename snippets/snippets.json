@@ -49,7 +49,7 @@
 	"If-block": {
 		"prefix": "b:if",
 		"body": [
-			"@if($1)",
+			"@if ($1)",
 			"    $2",
 			"@endif"
 		],
@@ -58,7 +58,7 @@
 	"If-else-block": {
 		"prefix": "b:if-else",
 		"body": [
-			"@if($1)",
+			"@if ($1)",
 			"    $2",
 			"@else",
 			"    $3",
@@ -83,7 +83,7 @@
 	"For-block": {
 		"prefix": "b:for",
 		"body": [
-			"@for(\\$i = ${1:0}; \\$i < ${2:\\$count}; \\$i++)",
+			"@for (\\$i = ${1:0}; \\$i < ${2:\\$count}; \\$i++)",
 			"    $3",
 			"@endfor"
 		],
@@ -92,7 +92,7 @@
 	"Foreach-block": {
 		"prefix": "b:foreach",
 		"body": [
-			"@foreach(${1:\\$collection} as ${2:\\$item})",
+			"@foreach (${1:\\$collection} as ${2:\\$item})",
 			"    $3",
 			"@endforeach"
 		],
