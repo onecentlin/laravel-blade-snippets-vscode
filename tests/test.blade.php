@@ -164,6 +164,7 @@ This comment will not be in the rendered HTML
 @include('view.name', ['some' => 'data'])
 @includeIf('view.name', ['some' => 'data'])
 @includeWhen($boolean, 'view.name', ['some' => 'data'])
+@includeFirst(['custom.admin', 'admin'], ['some' => 'data'])
 
 {{-- Rendering Views For Collections --}}
 @each('view.name', $jobs, 'job')

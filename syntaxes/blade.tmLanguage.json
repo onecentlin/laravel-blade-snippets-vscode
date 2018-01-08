@@ -2109,7 +2109,7 @@
             "name": "embedded.line.html"
         },
         {
-            "begin": "(\\s{0}|^)(\\@)\\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|includeIf|component|slot|can|elsecan|cannot|elsecannot|isset|empty|includeWhen|switch|case)\\b(?=(|\\s*|)\\()",
+            "begin": "(\\s{0}|^)(\\@)\\b(if|elseif|forelse|foreach|for|while|extends|unless|each|yield|lang|choice|section|include|push|hasSection|continue|break|stack|inject|includeIf|component|slot|can|elsecan|cannot|elsecannot|isset|empty|includeWhen|switch|case|includeFirst)\\b(?=(|\\s*|)\\()",
             "beginCaptures": {
                 "3": {
                     "name": "entity.name.function.laravel-blade"

@@ -372,5 +372,12 @@
 			"@endswitch"
 		],
 		"description": "Blade - switch"
+	},
+	"includeFirst": {
+		"prefix": "b:includeFirst",
+		"body": [
+			"@includeFirst(['${1:view.name}', '${2:variable}'], [${3:'some' => 'data'}])"
+		],
+		"description": "Blade - includeFirst"
 	}
 }
