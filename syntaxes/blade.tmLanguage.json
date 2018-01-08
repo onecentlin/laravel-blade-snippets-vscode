@@ -2216,7 +2216,7 @@
                 }
             ],
             "comment": "Catches the remainder.",
-            "end": "(\\?)>|(\\s{0}|^)(\\@)\\b(endphp)\\b",
+            "end": "\\?>|(\\s{0}|^)(\\@)\\b(endphp)\\b",
             "endCaptures": {
                 "0": {
                     "name": "punctuation.section.embedded.end.php"
