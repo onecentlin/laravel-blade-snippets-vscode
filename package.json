@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.11.0",
+    "version": "1.12.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -72,7 +72,17 @@
                 "language": "blade",
                 "path": "./snippets/helpers.json"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Blade Configuration",
+            "properties": {
+                "blade.format.enable": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable format blade file"
+                }
+            }
+        } 
     },
     "activationEvents": [
         "onLanguage:blade"
