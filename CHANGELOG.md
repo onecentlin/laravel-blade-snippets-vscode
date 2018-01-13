@@ -1,4 +1,15 @@
+## 1.12.0
+
+- Add `blade.format.enable` configuration setting for manual enable blade file format. (#30) 
+```json
+"blade.format.enable": true,
+```
+- Add `@includeFirst` directive
+- Add `b:includeFirst` snippet
+- Fix minor syxtax issue
+
 ## 1.11.0
+
 - Fix indent issue #9, #35 ([@izcream](https://github.com/izcream)) - [PR #38](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/38)
 - Fix minor whitespace inconsistencies ([@raniesantos](https://github.com/raniesantos)) - [PR #28](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/28/files)
 

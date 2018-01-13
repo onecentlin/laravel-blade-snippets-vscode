@@ -19,6 +19,8 @@ Add below settings to enable Emmet for blade:
     "blade": "html"
 },
 "emmet.triggerExpansionOnTab": true,
+
+"blade.format.enable": true, // if you would like to enable blade format
 ```
 
 > p.s. Since VS Code v1.15, please update preference settings from `emmet.syntaxProfiles` to `emmet.includeLanguages`.
@@ -76,6 +78,7 @@ Add below settings to enable Emmet for blade:
 | b:auth         | @auth...@endauth (v5.5)         |
 | b:guest        | @guest...@endguest (v5.5)       |
 | b:switch       | @switch...@case...@endswitch (v5.5)   |
+| b:includeFirst | @includeFirst (v5.5)            |
 
 ### $loop variable (Laravel v5.3+)
 
