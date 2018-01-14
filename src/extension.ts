@@ -20,6 +20,14 @@ class DocumentFormat implements vscode.DocumentFormattingEditProvider {
   }
 } // DocumentFormat
 
+class DocumentRangeFormatter implements vscode.DocumentRangeFormattingEditProvider {
+  provideDocumentRangeFormattingEdits(document: vscode.TextDocument, range: vscode.Range, options: vscode.FormattingOptions, token: vscode.CancellationToken): Thenable<vscode.TextEdit[]> {
+    let doc = lst.TextDocument.create(document.uri.fsPath, 'blade', 1, document.getText())
+    let format = (vscode.workspace.getConfiguration('blade.format') as any)
+    return (service.format(doc, range, format) as any)
+  }
+} // DocumentRangeFormatter
+
 export function activate(context: vscode.ExtensionContext) {
   let documentSelector: vscode.DocumentSelector = {
     language: 'blade',
@@ -28,8 +36,9 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(vscode.languages.registerDocumentHighlightProvider(documentSelector, new DocumentHighlight))
 
   let bladeFormat = vscode.workspace.getConfiguration('blade.format');
-  if (bladeFormat.get('enable')) {
-    context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(documentSelector, new DocumentFormat))
+  if (bladeFormat.get<boolean>('enable')) {
+    context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(documentSelector, new DocumentFormat));
+    context.subscriptions.push(vscode.languages.registerDocumentRangeFormattingEditProvider(documentSelector, new DocumentRangeFormatter));
   }
 
   // Set html indent
