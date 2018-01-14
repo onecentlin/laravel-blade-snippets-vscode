@@ -11,8 +11,16 @@ Hello, {{{ $name }}}.
 {{ isset($name) ? $name : 'Default' }}
 {{ $name or 'Default' }}
 
+{{--  TODO: Echo in tags syntax  --}}
+<div class="{{ $name }}" {{ isset($name) ? $name : 'Default' }}></div>
+
 {{-- Displaying Unescaped Data --}}
 Hello, {!! $name !!}.
+
+{{--  Rendering JSON  --}}
+<script>
+    var app = @json($array);
+</script>
 
 {{-- Blade & JavaScript Frameworks --}}
 Hello, @{{ name }}.
@@ -146,6 +154,7 @@ This comment will not be in the rendered HTML
     }
 ?>
 
+{{--  TODO: @php block syntax Highlighting  --}}
 @php
     foreach (range(1, 10) as $number) {
         echo $number;
