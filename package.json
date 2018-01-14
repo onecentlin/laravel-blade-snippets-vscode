@@ -80,6 +80,16 @@
                     "type": "boolean",
                     "default": false,
                     "description": "Enable format blade file"
+                },
+                "blade.format.insertSpaces": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Format using spaces"
+                },
+                "blade.format.tabSize": {
+                    "type": "int",
+                    "default": 4,
+                    "description": "Format tab size"
                 }
             }
         } 
