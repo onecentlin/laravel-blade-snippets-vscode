@@ -1,3 +1,9 @@
+## 1.13.0
+
+- Fix spaces on format (#40)
+- Enable format selection (#10)
+- Enhance blade format (#32, #36)
+
 ## 1.12.0
 
 - Add `blade.format.enable` configuration setting for manual enable blade file format. (#30) 
@@ -6,7 +12,7 @@
 ```
 - Add `@includeFirst` directive
 - Add `b:includeFirst` snippet
-- Fix minor syxtax issue
+- Fix minor syntax issue
 
 ## 1.11.0
 

@@ -1,4 +1,4 @@
-# Laravel Blade Snippets
+# [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
 
 Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
@@ -18,20 +18,16 @@ Add below settings to enable Emmet for blade:
 "emmet.includeLanguages": {
     "blade": "html"
 },
-"emmet.triggerExpansionOnTab": true,
-
-"blade.format.enable": true, // if you would like to enable blade format
+"emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
+"blade.format.enable": true,         // if you would like to enable blade format
 ```
-
-> p.s. Since VS Code v1.15, please update preference settings from `emmet.syntaxProfiles` to `emmet.includeLanguages`.
->
-> Please set `emmet.triggerExpansionOnTab` value to `true` if you want to enable tab to expanse emmet tags.
 
 ## Features
 
 * Blade syntax highlight
 * Laravel blade snippets
 * Emmet works in blade template
+* Blade formatting
 
 ## Blade Syntax Hightlight
 
@@ -70,15 +66,15 @@ Add below settings to enable Emmet for blade:
 | b:verbatim     | @verbatim...@endverbatim  (v5.3)|
 | b:php          | @php...@endphp  (v5.3)          |
 | b:includeIf    | @includeIf  (v5.3)              |
+| b:includeWhen  | @includeWhen (v5.4)             |
+| b:includeFirst | @includeFirst (v5.5)            |
 | b:component    | @component...@endcomponent (v5.4)|
 | b:slot         | @slot...@endslot (v5.4)         |
-| b:includeWhen  | @includeWhen (v5.4)             |
 | b:isset        | @isset...@endisset (v5.4)       |
 | b:empty        | @empty...@endempty (v5.4)       |
 | b:auth         | @auth...@endauth (v5.5)         |
 | b:guest        | @guest...@endguest (v5.5)       |
 | b:switch       | @switch...@case...@endswitch (v5.5)   |
-| b:includeFirst | @includeFirst (v5.5)            |
 
 ### $loop variable (Laravel v5.3+)
 

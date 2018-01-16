@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.12.0",
+    "version": "1.13.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -23,7 +23,9 @@
     "keywords": [
         "laravel",
         "blade",
-        "template"
+        "template",
+        "snippet",
+        "formatter"
     ],
     "icon": "images/icon.png",
     "galleryBanner": {
@@ -32,7 +34,8 @@
     },
     "categories": [
         "Languages",
-        "Snippets"
+        "Snippets",
+        "Formatters"
     ],
     "main": "./out/src/extension",
     "scripts": {
@@ -80,16 +83,6 @@
                     "type": "boolean",
                     "default": false,
                     "description": "Enable format blade file"
-                },
-                "blade.format.insertSpaces": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Format using spaces"
-                },
-                "blade.format.tabSize": {
-                    "type": "int",
-                    "default": 4,
-                    "description": "Format tab size"
                 }
             }
         } 
