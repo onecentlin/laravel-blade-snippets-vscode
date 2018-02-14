@@ -62,7 +62,7 @@
         "grammars": [
             {
                 "language": "blade",
-                "scopeName": "text.html.php.laravel-blade",
+                "scopeName": "text.html.php.blade",
                 "path": "./syntaxes/blade.tmLanguage.json"
             }
         ],
@@ -85,7 +85,7 @@
                     "description": "Enable format blade file"
                 }
             }
-        } 
+        }
     },
     "activationEvents": [
         "onLanguage:blade"
