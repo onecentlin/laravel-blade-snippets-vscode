@@ -1,9 +1,13 @@
+import * as path from 'path';
 import * as vscode from 'vscode';
 import * as html from 'vscode-html-languageservice';
 import * as lst from 'vscode-languageserver-types';
 import { BladeFormattingEditProvider } from './providers/BladeFormattingEditProvider';
+import { LanguageClient, LanguageClientOptions, ServerOptions, TransportKind, RequestType, TextDocumentPositionParams } from 'vscode-languageclient';
+import * as nls from 'vscode-nls';
 
 const service = html.getLanguageService()
+const localize = nls.loadMessageBundle();
 
 class DocumentHighlight implements vscode.DocumentHighlightProvider 
 {
@@ -15,17 +19,17 @@ class DocumentHighlight implements vscode.DocumentHighlightProvider
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let documentSelector: vscode.DocumentSelector = {
+    let defaultSelector: vscode.DocumentSelector = {
         language: 'blade',
         scheme: 'file'
     };
 
-    context.subscriptions.push(vscode.languages.registerDocumentHighlightProvider(documentSelector, new DocumentHighlight));
+    context.subscriptions.push(vscode.languages.registerDocumentHighlightProvider(defaultSelector, new DocumentHighlight));
 
     let bladeFormatCfg = vscode.workspace.getConfiguration('blade.format');
     if (bladeFormatCfg.get<boolean>('enable')) {
-        context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(documentSelector, new BladeFormattingEditProvider));
-        context.subscriptions.push(vscode.languages.registerDocumentRangeFormattingEditProvider(documentSelector, new BladeFormattingEditProvider));
+        context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(defaultSelector, new BladeFormattingEditProvider));
+        context.subscriptions.push(vscode.languages.registerDocumentRangeFormattingEditProvider(defaultSelector, new BladeFormattingEditProvider));
     }
 
     // Set html indent
@@ -48,6 +52,37 @@ export function activate(context: vscode.ExtensionContext) {
             }
         ],
     });
+
+    	// The server is implemented in node
+	let serverModule = context.asAbsolutePath(path.join('server', 'out', 'htmlServerMain.js'));
+	// The debug options for the server
+	let debugOptions = { execArgv: ['--nolazy', '--inspect=6045'] };
+
+	// If the extension is launch in debug mode the debug server options are use
+	// Otherwise the run options are used
+	let serverOptions: ServerOptions = {
+		run: { module: serverModule, transport: TransportKind.ipc },
+		debug: { module: serverModule, transport: TransportKind.ipc, options: debugOptions }
+    };
+    
+    let documentSelector = ['blade'];
+	let embeddedLanguages = { css: true, javascript: true };
+
+	// Options to control the language client
+	let clientOptions: LanguageClientOptions = {
+		documentSelector,
+		synchronize: {
+			configurationSection: ['blade', 'css', 'javascript'], // the settings to synchronize
+		},
+		initializationOptions: {
+			embeddedLanguages
+		}
+    };
+
+	// Create the language client and start the client.
+	let client = new LanguageClient('blade', localize('bladeserver.name', 'BLADE Language Server'), serverOptions, clientOptions);
+	client.registerProposedFeatures();
+    context.subscriptions.push(client.start());	
 }
 
 export function deactivate() {
