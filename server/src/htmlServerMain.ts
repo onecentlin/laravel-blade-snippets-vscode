@@ -114,7 +114,6 @@ connection.onInitialize((params: InitializeParams): InitializeResult => {
 		hoverProvider: true,
 		documentHighlightProvider: true,
 		documentRangeFormattingProvider: false,
-		documentLinkProvider: <any>false,
 		documentSymbolProvider: true,
 		definitionProvider: true,
 		signatureHelpProvider: { triggerCharacters: ['('] },

@@ -19,17 +19,17 @@ class DocumentHighlight implements vscode.DocumentHighlightProvider
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let defaultSelector: vscode.DocumentSelector = {
+    let documentSelector: vscode.DocumentSelector = {
         language: 'blade',
         scheme: 'file'
     };
 
-    context.subscriptions.push(vscode.languages.registerDocumentHighlightProvider(defaultSelector, new DocumentHighlight));
+    context.subscriptions.push(vscode.languages.registerDocumentHighlightProvider(documentSelector, new DocumentHighlight));
 
     let bladeFormatCfg = vscode.workspace.getConfiguration('blade.format');
     if (bladeFormatCfg.get<boolean>('enable')) {
-        context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(defaultSelector, new BladeFormattingEditProvider));
-        context.subscriptions.push(vscode.languages.registerDocumentRangeFormattingEditProvider(defaultSelector, new BladeFormattingEditProvider));
+        context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(documentSelector, new BladeFormattingEditProvider));
+        context.subscriptions.push(vscode.languages.registerDocumentRangeFormattingEditProvider(documentSelector, new BladeFormattingEditProvider));
     }
 
     // Set html indent
@@ -64,13 +64,13 @@ export function activate(context: vscode.ExtensionContext) {
 		run: { module: serverModule, transport: TransportKind.ipc },
 		debug: { module: serverModule, transport: TransportKind.ipc, options: debugOptions }
     };
-    
-    let documentSelector = ['blade'];
-	let embeddedLanguages = { css: true, javascript: true };
 
+	let embeddedLanguages = { css: true, javascript: true };
 	// Options to control the language client
 	let clientOptions: LanguageClientOptions = {
-		documentSelector,
+		documentSelector:[
+            { language: 'blade', scheme: 'file' }
+        ],
 		synchronize: {
 			configurationSection: ['blade', 'css', 'javascript'], // the settings to synchronize
 		},
