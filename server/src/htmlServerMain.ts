@@ -17,7 +17,7 @@ import { pushAll } from './utils/arrays';
 import { getDocumentContext } from './utils/documentContext';
 import uri from 'vscode-uri';
 import { formatError, runSafe } from './utils/errors';
-import { doComplete as emmetDoComplete, updateExtensionsPath as updateEmmetExtensionsPath, getEmmetCompletionParticipants } from 'vscode-emmet-helper';
+import { doComplete as emmetDoComplete, getEmmetCompletionParticipants } from 'vscode-emmet-helper';
 
 namespace TagCloseRequest {
 	export const type: RequestType<TextDocumentPositionParams, string | null, any, any> = new RequestType('html/tag');
@@ -71,7 +71,6 @@ function getDocumentSettings(textDocument: TextDocument, needsDocumentSettings: 
 }
 
 let emmetSettings = {};
-let currentEmmetExtensionsPath: string;
 const emmetTriggerCharacters = ['!', '.', '}', ':', '*', '$', ']', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 // After the server has started the client sends an initilize request. The server receives
@@ -169,13 +168,6 @@ connection.onDidChangeConfiguration((change) => {
 			formatterRegistration.then(r => r.dispose());
 			formatterRegistration = null;
 		}
-	}
-
-	emmetSettings = globalSettings.emmet;
-	if (currentEmmetExtensionsPath !== emmetSettings['extensionsPath']) {
-		currentEmmetExtensionsPath = emmetSettings['extensionsPath'];
-		const workspaceUri = (workspaceFolders && workspaceFolders.length === 1) ? uri.parse(workspaceFolders[0].uri) : null;
-		updateEmmetExtensionsPath(currentEmmetExtensionsPath, workspaceUri ? workspaceUri.fsPath : null);
 	}
 });
 
