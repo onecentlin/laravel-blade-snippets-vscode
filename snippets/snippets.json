@@ -76,6 +76,15 @@
             "@endif"
 		],
 		"description": "Blade - @hasSection condition"
+    },
+    "Unless-block": {
+		"prefix": "b:unless",
+		"body": [
+			"@unless ($1)",
+			"    $2",
+			"@endunless"
+		],
+		"description": "Blade - @unless block"
 	},
 
     /* Loops */
