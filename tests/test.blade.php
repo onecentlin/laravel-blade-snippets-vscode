@@ -5,13 +5,12 @@ Hello, {{ $name }}.
 The current UNIX timestamp is {{ time() }}.
 
 {{-- Escape Data --}}
-Hello, {{{ $name }}}.
+Hello, {{{ $name }}}.                                                           
 
 {{-- Echoing Data If It Exists --}}
 {{ isset($name) ? $name : 'Default' }}
 {{ $name or 'Default' }}
 
-{{--  TODO: Echo in tags syntax  --}}
 <div class="{{ $name }}" {{ isset($name) ? $name : 'Default' }}></div>
 
 {{-- Displaying Unescaped Data --}}
@@ -154,7 +153,6 @@ This comment will not be in the rendered HTML
     }
 ?>
 
-{{--  TODO: @php block syntax Highlighting  --}}
 @php
     foreach (range(1, 10) as $number) {
         echo $number;
