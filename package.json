@@ -39,7 +39,8 @@
     ],
     "main": "./out/src/extension",
     "scripts": {
-        "vscode:prepublish": "tsc -p ./",
+        "build-srv": "cd ./server && npm install && tsc -p ./",
+        "vscode:prepublish": "tsc -p ./ && pushd \"./\" && npm run build-srv && popd",
         "compile": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
