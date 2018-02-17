@@ -72,7 +72,7 @@ export function activate(context: vscode.ExtensionContext) {
             { language: 'blade', scheme: 'file' }
         ],
 		synchronize: {
-			configurationSection: ['blade', 'css', 'javascript'], // the settings to synchronize
+			configurationSection: ['blade', 'css', 'javascript', 'emmet'], // the settings to synchronize
 		},
 		initializationOptions: {
 			embeddedLanguages
