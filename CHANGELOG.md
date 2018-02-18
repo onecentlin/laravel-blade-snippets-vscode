@@ -1,3 +1,7 @@
+## 1.15.0
+
+- Support Envoy directives: `@setup`, `@servers`, `@task`, `@story`, `@finished`, `@slack` (#41)
+
 ## 1.14.2
 
 - Fix error in Blade Language Server (#46)
