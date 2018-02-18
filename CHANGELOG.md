@@ -1,3 +1,15 @@
+## 1.14.2
+
+- Fix error in Blade Language Server (#46)
+- Fix extensionPath of undefined (#47)
+- Emmet setting changed (#48)
+> Settings below for blade is no longer needed.
+>```json
+>"emmet.includeLanguages": {
+>   "blade": "html"
+>},
+>```
+
 ## 1.14.0
 
 - Fix blade syntax broken with VSCode 1.20.0 release (#42)
@@ -12,7 +24,7 @@
 
 ## 1.12.0
 
-- Add `blade.format.enable` configuration setting for manual enable blade file format. (#30) 
+- Add `blade.format.enable` configuration setting for manual enable blade file format. (#30)
 ```json
 "blade.format.enable": true,
 ```

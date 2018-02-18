@@ -8,19 +8,21 @@ Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
 ![Demo](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/screenshot.gif)
 
-## Important update change (VS Code 1.15+)
+## User Settings
 
 Open `Preferences` -> `Settings`
 
-Add below settings to enable Emmet for blade:
-
 ```json
-"emmet.includeLanguages": {
-    "blade": "html"
-},
 "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
 "blade.format.enable": true,         // if you would like to enable blade format
 ```
+
+> Since extension v1.14.*, emmet setting below for blade is no longer needed. You can remove it.
+>```json
+>"emmet.includeLanguages": {
+>   "blade": "html"
+>},
+>```
 
 ## Features
 
