@@ -267,3 +267,24 @@ This comment will not be in the rendered HTML
 
 {{ __('messages.welcome') }}
 @lang('messages.welcome')
+
+
+{{--  Envoy  --}}
+
+@setup
+require __DIR__.'/vendor/autoload.php';
+$dotenv = new Dotenv\Dotenv(__DIR__);
+@endsetup
+
+@servers(['web' => $server])
+
+@task('init')
+if [ ! -d {{ $path }}/current ]; then
+cd {{ $path }}
+@endtask
+
+@story('deploy')
+deployment_start
+deployment_composer
+deployment_finish
+@endstory
