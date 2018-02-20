@@ -151,7 +151,7 @@
             }
           },
           "contentName": "source.php",
-          "end": "(})}}",
+          "end": "}}}",
           "endCaptures": {
             "0": {
               "name": "support.function.construct.end.blade"
@@ -175,7 +175,7 @@
             }
           },
           "contentName": "source.php",
-          "end": "(})}",
+          "end": "}}",
           "endCaptures": {
             "0": {
               "name": "support.function.construct.end.blade"
@@ -199,7 +199,34 @@
             }
           },
           "contentName": "source.php",
-          "end": "(!)!}",
+          "end": "!!}",
+          "endCaptures": {
+            "0": {
+              "name": "support.function.construct.end.blade"
+            },
+            "1": {
+              "name": "source.php"
+            }
+          },
+          "name": "meta.function.echo.blade",
+          "patterns": [
+            {
+              "include": "#language"
+            }
+          ]
+        },
+        {
+          "begin": "(@){{",
+          "beginCaptures": {
+            "0": {
+              "name": "support.function.construct.begin.blade"
+            },
+            "1": {
+              "name": "variable.other.index.php"
+            }
+          },
+          "contentName": "source.php",
+          "end": "}}",
           "endCaptures": {
             "0": {
               "name": "support.function.construct.end.blade"
