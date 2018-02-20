@@ -2897,6 +2897,10 @@
                   "name": "storage.type.php"
                 },
                 {
+                  "match": "\\w+",
+                  "name": "entity.name.class.php"
+                },
+                {
                   "include": "#class-name"
                 },
                 {
