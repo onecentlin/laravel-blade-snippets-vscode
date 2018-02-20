@@ -1,3 +1,8 @@
+## 1.16.0
+
+- Fix tag attributes completition (#24)
+- Fix comment issue in `script`, `style`, `php` block with `Ctrl-/` keymap shortcut (#25, #34)
+
 ## 1.15.0
 
 - Support Envoy directives: `@setup`, `@servers`, `@task`, `@story`, `@finished`, `@slack` (#41)
