@@ -243,7 +243,7 @@
           ]
         },
         {
-          "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  (?i: # Ordering not important as we everything will be matched up to opening parentheses\n   auth\n  |break\n  |can\n  |cannot\n  |case\n  |choice\n  |component\n  |continue\n  |each\n  |elsecan\n  |elsecannot\n  |elseif\n  |empty\n  |extends\n  |for\n  |foreach\n  |forelse\n  |guest\n  |hassection\n  |if\n  |include\n  |includefirst\n  |includeif\n  |includewhen\n  |inject\n  |isset\n  |json\n  |lang\n  |php\n  |prepend\n  |push\n  |section\n  |slot\n  |stack\n  |switch\n  |unless\n  |unset\n  |while\n  |yield\n |servers\n  |task\n  |story\n  |slack\n  )\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
+          "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  (?i: # Ordering not important as we everything will be matched up to opening parentheses\n   auth\n  |break\n  |can\n  |cannot\n  |case\n  |choice\n  |component\n  |continue\n  |each\n  |elsecan\n  |elsecannot\n  |elseif\n  |empty\n  |extends\n  |for\n  |foreach\n  |forelse\n  |guest\n  |hassection\n  |if\n  |include\n  |includefirst\n  |includeif\n  |includewhen\n  |inject\n  |isset\n  |json\n  |lang\n  |prepend\n  |push\n  |section\n  |slot\n  |stack\n  |switch\n  |unless\n  |unset\n  |while\n  |yield\n |servers\n  |task\n  |story\n  |slack\n  )\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
           "beginCaptures": {
             "1": {
               "name": "keyword.blade"
@@ -299,12 +299,12 @@
           "end": "(?<![A-Za-z0-9_@])(?=@(?i:endphp|endsetup)\\b)",
           "beginCaptures": {
             "0": {
-              "name": "keyword.begin.blade"
+              "name": "punctuation.section.embedded.begin.php"
             }
           },
           "endCaptures": {
             "0": {
-              "name": "keyword.end.blade"
+              "name": "punctuation.section.embedded.end.php"
             }
           },
           "contentName": "source.php",
@@ -319,7 +319,7 @@
           "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  (?i:\n    endphp|endsetup\n  )\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
           "beginCaptures": {
             "1": {
-              "name": "keyword.end.blade"
+              "name": "punctuation.section.embedded.end.php"
             },
             "2": {
               "name": "begin.bracket.round.blade.php"
@@ -341,7 +341,7 @@
         },
         {
           "match": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n@\n(?: # Ordering not important as we everything will be matched up to word boundary\n (?i)endphp|endsetup\n)\n\\b",
-          "name": "keyword.end.blade"
+          "name": "punctuation.section.embedded.end.php"
         },
         {
           "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  \\w+(?:::w+)? # Any number/letter sequence, can also be postfixed by ::someOtherString\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
