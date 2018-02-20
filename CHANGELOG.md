@@ -1,7 +1,7 @@
 ## 1.16.0
 
 - Fix tag attributes completition (#24)
-- Fix comment issue in `script`, `style`, `php` block with `Ctrl-/` keymap shortcut (#25, #34)
+- Fix comment issue in `script`, `style`, `php` block with `Ctrl + /` or `⌘ + /` keymap shortcut (#25, #34)
 
 ## 1.15.0
 
@@ -24,6 +24,7 @@
 - Fix blade syntax broken with VSCode 1.20.0 release (#42)
 - Modify the highlight, add to the style and script autocomplete ([@tiansin](https://github.com/tiansin)) - [PR #43](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/43)
 - Fix javascript autocompletion not working in script tag (#39)
+- Add `b:unless` snippet
 
 ## 1.13.0
 

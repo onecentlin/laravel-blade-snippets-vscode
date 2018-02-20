@@ -48,6 +48,7 @@ Open `Preferences` -> `Settings`
 | b:section-show | @section...@show                |
 | b:if           | @if...@endif                    |
 | b:if-else      | @if...@else...@endif            |
+| b:unless       | @unless...@endunless            |
 | b:has-section  | @hasSection...@else...@endif    |
 | b:for          | @for...@endfor                  |
 | b:foreach      | @foreach...@endforeach          |
@@ -57,7 +58,7 @@ Open `Preferences` -> `Settings`
 | b:push         | @push...@endpush                |
 | b:stack        | @stack                          |
 | b:inject       | @inject                         |
-| b:comment      | {{-- comment --}}  (`Ctrl+/`)   |
+| b:comment      | {{-- comment --}}  (`Ctrl + /` or `⌘ + /`)   |
 | b:echo         | {{ $data }}                     |
 | b:echo-html    | {!! $html !!}                   |
 | b:echo-raw     | @{{ variable }}                 |
@@ -108,7 +109,7 @@ Please file any [issues](https://github.com/onecentlin/laravel-blade-snippets-vs
 
 ## Credits
 
-* Blade language grammar is based on [Medalink syntax definition](https://github.com/Medalink/laravel-blade) for Sublime Text.
+* Blade language grammar is based on [Medalink syntax definition](https://github.com/Medalink/laravel-blade) for Sublime Text; Converted from [Blade templating support in Atom](https://github.com/jawee/language-blade)
 * Textmate language format file is based on [Textmate bundle for Laravel 5](https://github.com/loranger/Laravel.tmbundle).
 
 ## License

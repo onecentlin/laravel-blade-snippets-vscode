@@ -69,7 +69,7 @@
     "Has Section": {
 		"prefix": "b:has-section",
 		"body": [
-			"@hasSection('${1:name}')",
+			"@hasSection ('${1:name}')",
             "    $2",
             "@else",
             "    $3",
