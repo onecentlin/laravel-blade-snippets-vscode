@@ -262,3 +262,8 @@ This comment will not be in the rendered HTML
     @default
         Default case...
 @endswitch
+
+{{--  Retrieving Translation Strings  --}}
+
+{{ __('messages.welcome') }}
+@lang('messages.welcome')

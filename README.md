@@ -78,6 +78,7 @@ Open `Preferences` -> `Settings`
 | b:auth         | @auth...@endauth (v5.5)         |
 | b:guest        | @guest...@endguest (v5.5)       |
 | b:switch       | @switch...@case...@endswitch (v5.5)   |
+| b:lang         | @lang                           |
 
 ### $loop variable (Laravel v5.3+)
 

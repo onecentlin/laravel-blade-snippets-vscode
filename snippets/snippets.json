@@ -388,5 +388,16 @@
 			"@includeFirst(['${1:view.name}', '${2:variable}'], [${3:'some' => 'data'}])"
 		],
 		"description": "Blade - includeFirst"
+	},
+
+	/* Retrieving Translation Strings */
+
+	"lang": {
+		"prefix": "b:lang",
+		"body": [
+			"@lang('${1:messages.welcome}')"
+		],
+		"description": "Blade - lang"
 	}
+
 }
