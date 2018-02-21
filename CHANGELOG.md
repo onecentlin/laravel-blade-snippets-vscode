@@ -1,3 +1,9 @@
+## 1.17.0
+
+- Syntax highlighting enhancement
+- Add syntax highlighting for class static method
+- Add `b:lang` snippet (#52)
+
 ## 1.16.0
 
 - Fix tag attributes completition (#24)
