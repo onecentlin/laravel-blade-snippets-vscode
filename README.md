@@ -88,6 +88,14 @@ Open `Preferences` -> `Settings`
 | b:loop-first   | @if($loop->first)...@endif      |
 | b:loop-last    | @if($loop->last)...@endif       |
 
+### Laravel v5.6+
+
+| Trigger        | Snippet                         |
+|----------------|---------------------------------|
+| b:csrf         | @csrf                           |
+| b:method       | @method(...)                    |
+| b:dump         | @dump(...)                      |
+
 ## Laravel Helper Snippets for Blade
 
 | Trigger         | Laravel Helper                  |

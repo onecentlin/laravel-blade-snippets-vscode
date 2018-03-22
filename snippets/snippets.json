@@ -390,6 +390,30 @@
 		"description": "Blade - includeFirst"
 	},
 
+	/* v5.6 */
+
+	"csrf": {
+		"prefix": "b:csrf",
+		"body": [
+			"@csrf"
+		],
+		"description": "Blade - form csrf field"
+	},
+	"method": {
+		"prefix": "b:method",
+		"body": [
+			"@method($1)"
+		],
+		"description": "Blade - form method field"
+	},
+	"dump": {
+		"prefix": "b:dump",
+		"body": [
+			"@dump($1)"
+		],
+		"description": "Blade - dump"
+	},
+
 	/* Retrieving Translation Strings */
 
 	"lang": {
