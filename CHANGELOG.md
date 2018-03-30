@@ -1,6 +1,7 @@
 ## Unreleased
 
 - Add `b:csrf`, `b:method`, `b:dump` snipptes ([@HasanAlyazidi](https://github.com/HasanAlyazidi) - [PR #60](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/60))
+- Fix formatting issue in url syntax. (#57)
 
 ## 1.17.0
 

@@ -30,7 +30,10 @@ export class BladeFormatter
 
         output = output.replace(/(\s*)\@include/g, "\n" + this.indentPattern + "@include");
         output = output.replace(/(\s*)\@endsection/g, "\n@endsection\n");
-        
+
+        // fix #57 url extra space after formatting
+        output = output.replace(/url\(\"(\s*)/g, "url\(\"");
+
         // remove extra lines
         output = output.replace(/\n\n/g, "\n");
 
