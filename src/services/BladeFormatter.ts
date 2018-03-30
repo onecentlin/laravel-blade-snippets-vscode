@@ -21,7 +21,7 @@ export class BladeFormatter
         let output: string = inuptText;
 
         // block pattern
-        let patternBlock = /(\@)(inject|extends|section|hasSection|include|push|stop)/g;
+        let patternBlock = /(\@)(inject|extends|section|hasSection|include|stop|endpush|endphp)/g;
 
         // blade format fix
         output = output.replace(patternBlock, function (match: string) {
@@ -33,9 +33,6 @@ export class BladeFormatter
 
         // fix #57 url extra space after formatting
         output = output.replace(/url\(\"(\s*)/g, "url\(\"");
-
-        // remove extra lines
-        output = output.replace(/\n\n/g, "\n");
 
         return output.trim();
     }
