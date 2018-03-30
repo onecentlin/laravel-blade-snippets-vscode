@@ -1,3 +1,7 @@
+## Unreleased
+
+- Add `b:csrf`, `b:method`, `b:dump` snipptes ([@HasanAlyazidi](https://github.com/HasanAlyazidi) - [PR #60](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/60))
+
 ## 1.17.0
 
 - Syntax highlighting enhancement
@@ -28,7 +32,7 @@
 ## 1.14.0
 
 - Fix blade syntax broken with VSCode 1.20.0 release (#42)
-- Modify the highlight, add to the style and script autocomplete ([@tiansin](https://github.com/tiansin)) - [PR #43](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/43)
+- Modify the highlight, add to the style and script autocomplete ([@tiansin](https://github.com/tiansin) - [PR #43](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/43))
 - Fix javascript autocompletion not working in script tag (#39)
 - Add `b:unless` snippet
 
@@ -50,8 +54,8 @@
 
 ## 1.11.0
 
-- Fix indent issue #9, #35 ([@izcream](https://github.com/izcream)) - [PR #38](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/38)
-- Fix minor whitespace inconsistencies ([@raniesantos](https://github.com/raniesantos)) - [PR #28](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/28/files)
+- Fix indent issue #9, #35 ([@izcream](https://github.com/izcream) - [PR #38](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/38))
+- Fix minor whitespace inconsistencies ([@raniesantos](https://github.com/raniesantos) - [PR #28](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/28/files))
 
 ## 1.10.0
 
