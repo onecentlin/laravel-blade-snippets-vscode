@@ -243,7 +243,7 @@
           ]
         },
         {
-          "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  (?i: # Ordering not important as we everything will be matched up to opening parentheses\n   auth\n  |break\n  |can\n  |cannot\n  |case\n  |choice\n  |component\n  |continue\n  |each\n  |elsecan\n  |elsecannot\n  |elseif\n  |empty\n  |extends\n  |for\n  |foreach\n  |forelse\n  |guest\n  |hassection\n  |if\n  |include\n  |includefirst\n  |includeif\n  |includewhen\n  |inject\n  |isset\n  |json\n  |lang\n  |prepend\n  |push\n  |section\n  |slot\n  |stack\n  |switch\n  |unless\n  |unset\n  |while\n  |yield\n |servers\n  |task\n  |story\n  |slack\n |method\n |dump\n  )\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
+          "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  (?i: # Ordering not important as we everything will be matched up to opening parentheses\n   auth\n  |break\n  |can\n  |cannot\n  |case\n  |choice\n  |component\n  |continue\n  |each\n  |elsecan\n  |elsecannot\n  |elseif\n  |empty\n  |extends\n  |for\n  |foreach\n  |forelse\n  |guest\n  |hassection\n  |if\n  |include\n  |includefirst\n  |includeif\n  |includewhen\n  |inject\n  |isset\n  |json\n  |lang\n  |prepend\n  |push\n  |section\n  |slot\n  |stack\n  |switch\n  |unless\n  |unset\n  |while\n  |yield\n |servers\n  |task\n  |story\n  |slack\n |method\n |dump\n |php\n )\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
           "beginCaptures": {
             "1": {
               "name": "keyword.blade"
