@@ -1,4 +1,5 @@
-export class BladeFormatter {
+export class BladeFormatter
+{
 	newLine: string = "\n";
 	indentPattern: string;
 
