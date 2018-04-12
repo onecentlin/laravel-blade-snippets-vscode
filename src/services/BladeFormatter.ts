@@ -1,4 +1,4 @@
-export class BladeFormatter
+export class BladeFormatter 
 {
     newLine: string = "\n";
     indentPattern: string;
@@ -16,7 +16,7 @@ export class BladeFormatter
     }
 
     format(inuptText: string): string {
-
+        
         let inComment: boolean = false;
         let output: string = inuptText;
 
@@ -30,8 +30,9 @@ export class BladeFormatter
 
         output = output.replace(/(\s*)\@include/g, "\n" + this.indentPattern + "@include");
 		output = output.replace(/(\s*)\@endsection/g, "\n@endsection\n");
-
-        output = output.replace(/(\@(section|yield)\(.*\',.*|\@extends\(.*\))/g, function(match: string) {
+		
+		// Fix #65 empty new line after @extends and self-closing @section
+        output = output.replace(/(\@(section|yield)\(.*\',.*|\@extends\(.*\))/g, function(match) {
             return match + "\n";
         });
 
@@ -42,7 +43,7 @@ export class BladeFormatter
     }
 }
 
-export interface IBladeFormatterOptions
+export interface IBladeFormatterOptions 
 {
     insertSpaces?: boolean;
     tabSize?: number;
