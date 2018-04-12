@@ -30,6 +30,7 @@ export class BladeFormatter {
 		output = output.replace(/(\s*)\@include/g, "\n" + this.indentPattern + "@include");
 		output = output.replace(/(\s*)\@endsection/g, "\n@endsection\n");
 
+		// Fix #65 empty new line after @extends and self-closing @section
 		output = output.replace(/(\@(section|yield)\(.*\',.*|\@extends\(.*\))/g, function (match: string) {
 			return match + "\n";
 		});
