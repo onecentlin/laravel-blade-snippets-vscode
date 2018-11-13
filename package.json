@@ -18,7 +18,7 @@
         "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
     },
     "engines": {
-        "vscode": "^1.16.0"
+        "vscode": "^1.26.0"
     },
     "keywords": [
         "laravel",
@@ -101,9 +101,9 @@
         "vscode": "^1.1.18"
     },
     "dependencies": {
-        "vscode-css-languageservice": "^3.0.8",
-        "vscode-html-languageservice": "^2.1.2",
+        "vscode-css-languageservice": "^3.0.12",
+        "vscode-html-languageservice": "^2.1.10",
         "vscode-languageclient": "^3.5.1",
-        "vscode-languageserver-types": "^3.6.0"
+        "vscode-languageserver-types": "^3.13.0"
     }
 }
