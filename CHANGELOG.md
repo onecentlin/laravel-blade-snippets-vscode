@@ -1,3 +1,8 @@
+## 1.19.0
+
+- Append html format options to html formatter ([@ayatkyo](https://github.com/ayatkyo) - [PR #87](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/87))
+- Update package dependencies
+
 ## 1.18.0
 
 - Add `b:csrf`, `b:method`, `b:dump` snipptes ([@HasanAlyazidi](https://github.com/HasanAlyazidi) - [PR #60](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/60))
