@@ -1,3 +1,7 @@
+## 1.20.0
+
+- Update blade formatter fixed for updated languageservice
+
 ## 1.19.0
 
 - Append html format options to html formatter ([@ayatkyo](https://github.com/ayatkyo) - [PR #87](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/87))
