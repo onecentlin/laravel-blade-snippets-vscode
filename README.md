@@ -75,6 +75,7 @@ Open `Preferences` -> `Settings`
 | b:slot         | @slot...@endslot (v5.4)         |
 | b:isset        | @isset...@endisset (v5.4)       |
 | b:empty        | @empty...@endempty (v5.4)       |
+| b:error        | @error...@enderror (v5.8)       |
 | b:auth         | @auth...@endauth (v5.5)         |
 | b:guest        | @guest...@endguest (v5.5)       |
 | b:switch       | @switch...@case...@endswitch (v5.5)   |
