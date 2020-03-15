@@ -7,7 +7,9 @@
       "es6"
     ],
     "sourceMap": true,
-    "rootDir": "."
+    "rootDir": ".",
+    "skipLibCheck": true,
+		"allowSyntheticDefaultImports": true
   },
   "exclude": [
         "server"
