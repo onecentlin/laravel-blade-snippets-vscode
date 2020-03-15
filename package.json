@@ -41,9 +41,7 @@
     "scripts": {
         "build-srv": "cd ./server && npm install && tsc -p ./",
         "vscode:prepublish": "tsc -p ./ && pushd \"./\" && npm run build-srv && popd",
-        "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
+        "compile": "tsc -watch -p ./"
     },
     "contributes": {
         "languages": [
@@ -97,13 +95,13 @@
         "onLanguage:blade"
     ],
     "devDependencies": {
-        "@types/node": "^8.0.17",
-        "vscode": "^1.1.33"
+        "@types/node": "^8.10.59",
+        "@types/vscode": "^1.43.0"
     },
     "dependencies": {
-        "vscode-css-languageservice": "^4.0.2",
-        "vscode-html-languageservice": "^3.0.2",
+        "vscode-css-languageservice": "^4.1.1",
+        "vscode-html-languageservice": "^3.0.3",
         "vscode-languageclient": "^3.5.1",
-        "vscode-languageserver-types": "^3.14.0"
+        "vscode-languageserver-types": "^3.15.1"
     }
 }
