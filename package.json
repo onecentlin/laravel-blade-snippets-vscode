@@ -18,7 +18,7 @@
         "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
     },
     "engines": {
-        "vscode": "^1.26.0"
+        "vscode": "^1.43.0"
     },
     "keywords": [
         "laravel",
