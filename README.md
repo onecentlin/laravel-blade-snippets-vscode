@@ -75,11 +75,12 @@ Open `Preferences` -> `Settings`
 | b:slot         | @slot...@endslot (v5.4)         |
 | b:isset        | @isset...@endisset (v5.4)       |
 | b:empty        | @empty...@endempty (v5.4)       |
-| b:error        | @error...@enderror (v5.8)       |
 | b:auth         | @auth...@endauth (v5.5)         |
 | b:guest        | @guest...@endguest (v5.5)       |
 | b:switch       | @switch...@case...@endswitch (v5.5)   |
 | b:lang         | @lang                           |
+| b:error        | @error...@enderror (v5.8)       |
+| b:props        | @props (v7.4)                   |
 
 ### $loop variable (Laravel v5.3+)
 
@@ -112,6 +113,13 @@ Open `Preferences` -> `Settings`
 | lv:csrf-field   | csrf_field()                    |
 | lv:csrf-token   | csrf_token()                    |
 | lv:pagination-links | $collection->links()        |
+
+## Blade extensions (register in the `boot` method of `ServiceProvider`)
+
+- `Blade::component`
+- `Blade::include`
+- `Blade::if`
+- `Blade::directive`
 
 ## Contact
 

@@ -1,6 +1,12 @@
 ## 1.21.0
 
 - Add `b:error` snippets ([@CaddyDz](https://github.com/CaddyDz) - [PR #95](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/95))
+- Add `b:props` snippets
+- Add blade extensions snippets
+    - `Blade::component`
+    - `Blade::include`
+    - `Blade::if`
+    - `Blade::directive`
 
 ## 1.20.0
 
