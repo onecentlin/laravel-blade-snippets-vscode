@@ -1,3 +1,7 @@
+## 1.21.0
+
+- Add `b:error` snippets ([@CaddyDz](https://github.com/CaddyDz) - [PR #95](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/95))
+
 ## 1.20.0
 
 - Update blade formatter fixed for updated languageservice

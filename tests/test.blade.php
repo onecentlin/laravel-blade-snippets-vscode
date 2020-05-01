@@ -54,6 +54,10 @@ Hello, @{{ name }}.
     // $records is "empty"...
 @endempty
 
+@error('field')
+    {{ $message }}
+@enderror
+
 {{-- Loops --}}
 
 @for ($i = 0; $i < 10; $i++)
