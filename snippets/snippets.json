@@ -343,7 +343,7 @@
 		"body": [
 			"@error(${1:\\$record})",
 			"    $2",
-			"@error"
+			"@enderror"
 		],
 		"description": "Blade - error"
 	},
