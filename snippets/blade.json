@@ -1,0 +1,34 @@
+{
+    "Blade-component": {
+        "prefix": "Blade::component",
+        "body": [
+            "Blade::component('${1:package-name}', ${2:PackageNameComponent}::class);"
+        ],
+        "description": "Registering Package Components (AppServiceProvider boot method)"
+    },
+    "Blade-include": {
+        "prefix": "Blade::include",
+        "body": [
+            "Blade::include('${1:includes.input}', '${2:input}');"
+        ],
+        "description": "Aliasing Includes (AppServiceProvider boot method)"
+    },
+    "Blade-if": {
+        "prefix": "Blade::if",
+        "body": [
+            "Blade::if('${1:env}', function ($${2:environment}) {",
+            "    ${3:return app()->environment($$environment);}",
+            "});"
+        ],
+        "description": "Custom If Statements (AppServiceProvider boot method)"
+    },
+    "Blade-directive": {
+        "prefix": "Blade::directive",
+        "body": [
+            "Blade::directive('${1:datetime}', function ($${2:expression}) {",
+            "    ${3:return \"<?php echo ($$expression)->format('m/d/Y H:i'); ?>\";}",
+            "});"
+        ],
+        "description": "Custom directive (AppServiceProvider boot method)"
+    }
+}

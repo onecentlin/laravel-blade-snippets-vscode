@@ -78,6 +78,10 @@
             {
                 "language": "blade",
                 "path": "./snippets/helpers.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/blade.json"
             }
         ],
         "configuration": {
