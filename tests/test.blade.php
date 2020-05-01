@@ -272,6 +272,7 @@ This comment will not be in the rendered HTML
 {{ __('messages.welcome') }}
 @lang('messages.welcome')
 
+@props(['type' => 'info', 'message'])
 
 {{--  Envoy  --}}
 

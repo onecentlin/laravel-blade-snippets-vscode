@@ -431,6 +431,12 @@
 			"@lang('${1:messages.welcome}')"
 		],
 		"description": "Blade - lang"
+	},
+
+	"props": {
+		"prefix": "b:props",
+		"body": "@props(['${1:propName}'$2])",
+		"description": "Blade component data properties"
 	}
 
 }
