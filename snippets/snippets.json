@@ -341,7 +341,7 @@
 	"error": {
 		"prefix": "b:error",
 		"body": [
-			"@error(${1:\\$record})",
+			"@error('${1:record}')",
 			"    $2",
 			"@enderror"
 		],
