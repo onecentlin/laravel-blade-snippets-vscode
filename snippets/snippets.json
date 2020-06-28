@@ -432,9 +432,39 @@
 		"description": "Blade - lang"
 	},
 
+	/* v6.x */
+
+	"includeUnless": {
+		"prefix": "b:includeUnless",
+		"body": [
+			"@includeUnless(${1:\\$boolean}, '${2:view.name}', [${3:'some' => 'data'}])"
+		],
+		"description": "Blade - includeUnless"
+	},
+
+	/* v7.x */
+
 	"props": {
 		"prefix": "b:props",
 		"body": "@props(['${1:propName}'])",
 		"description": "Blade component data properties"
+	},
+	"env": {
+		"prefix": "b:env",
+		"body": [
+			"@env('${1:staging}')",
+			"    $2",
+			"@endenv"
+		],
+		"description": "Blade - env"
+	},
+	"production": {
+		"prefix": "b:production",
+		"body": [
+			"@production",
+			"    $1",
+			"@endproduction"
+		],
+		"description": "Blade - production"
 	}
 }
