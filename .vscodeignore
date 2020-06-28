@@ -9,4 +9,7 @@ src/**
 tsconfig.json
 vsc-extension-quickstart.md
 server/src/**
+server/lib/**
 server/*.json
+webpack.config.js
+node_modules/**

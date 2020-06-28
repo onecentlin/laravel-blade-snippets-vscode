@@ -20,8 +20,7 @@ class DocumentHighlight implements vscode.DocumentHighlightProvider
 export function activate(context: vscode.ExtensionContext) {
 
     let documentSelector: vscode.DocumentSelector = {
-        language: 'blade',
-        scheme: 'file'
+        language: 'blade'
     };
 
     context.subscriptions.push(vscode.languages.registerDocumentHighlightProvider(documentSelector, new DocumentHighlight));
@@ -68,9 +67,7 @@ export function activate(context: vscode.ExtensionContext) {
     let embeddedLanguages = { css: true, javascript: true };
     // Options to control the language client
     let clientOptions: LanguageClientOptions = {
-        documentSelector:[
-            { language: 'blade', scheme: 'file' }
-        ],
+        documentSelector: ['blade'],
         synchronize: {
             configurationSection: ['blade', 'css', 'javascript', 'emmet'], // the settings to synchronize
         },
