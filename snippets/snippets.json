@@ -4,14 +4,14 @@
 	"Extend layout": {
 		"prefix": "b:extends",
 		"body": [
-			"@extends('${1:name}')$2"
+			"@extends('${1:name}')"
 		],
 		"description": "Blade - extends view layout"
 	},
 	"Yield content": {
 		"prefix": "b:yield",
 		"body": [
-			"@yield('${1:name}')$2"
+			"@yield('${1:name}')"
 		],
 		"description": "Blade - yield content section"
 	},
@@ -39,7 +39,7 @@
 	"Include view": {
 		"prefix": "b:include",
 		"body": [
-			"@include('${1:name}')$2"
+			"@include('${1:name}')"
 		],
 		"description": "Blade - include view"
 	},
@@ -133,7 +133,7 @@
 	"each loop": {
 		"prefix": "b:each",
 		"body": [
-            "@each('${1:view.name}', ${2:\\$collection}, '${3:variable}', '${4:view.empty}')$5"
+            "@each('${1:view.name}', ${2:\\$collection}, '${3:variable}', '${4:view.empty}')"
 		],
 		"description": "Blade - @each loop"
 	},
@@ -154,21 +154,21 @@
 	"blade echo-data": {
 		"prefix": "b:echo",
 		"body": [
-			"{{ ${1:\\$data} }}$2"
+			"{{ ${1:\\$data} }}"
 		],
 		"description": "Blade - echo data"
 	},
 	"blade echo-unescaped-data": {
 		"prefix": "b:echo-html",
 		"body": [
-			"{!! ${1:\\$html_data} !!}$2"
+			"{!! ${1:\\$html_data} !!}"
 		],
 		"description": "Blade - echo unescaped data (allow html outputs)"
 	},
 	"blade echo-untouch": {
 		"prefix": "b:echo-raw",
 		"body": [
-			"@{{ ${1:variable} }}$2"
+			"@{{ ${1:variable} }}"
 		],
 		"description": "Blade - echo untouched data (allow javascript expression)"
 	},
@@ -176,7 +176,7 @@
 		"prefix": "b:verbatim",
 		"body": [
 			"@verbatim",
-			"{{ ${1:variable} }}$2",
+			"{{ ${1:variable} }}",
 			"@endverbatim"
 		],
 		"description": "Blade - displaying JavaScript variables in a large portion of your template"
@@ -195,7 +195,7 @@
     "Stack": {
 		"prefix": "b:stack",
 		"body": [
-			"@stack('${1:name}')$2"
+			"@stack('${1:name}')"
 		],
 		"description": "Blade - @stack"
 	},
@@ -205,8 +205,7 @@
 	"inject service": {
 		"prefix": "b:inject",
 		"body": [
-			"@inject('${1:name}', '${2:class}')",
-            "$3"
+			"@inject('${1:name}', '${2:class}')"
 		],
 		"description": "Blade - @inject Service"
 	},
@@ -295,7 +294,7 @@
 	"includeIf": {
 		"prefix": "b:includeIf",
 		"body": [
-			"@includeIf('${1:view.name}'${2:, ['some' => 'data']})$3"
+			"@includeIf('${1:view.name}'${2:, ['some' => 'data']})"
 		],
 		"description": "Blade - include a view that may or may not be present, you should use the @includeIf directive"
 	},
@@ -435,8 +434,7 @@
 
 	"props": {
 		"prefix": "b:props",
-		"body": "@props(['${1:propName}'$2])",
+		"body": "@props(['${1:propName}'])",
 		"description": "Blade component data properties"
 	}
-
 }
