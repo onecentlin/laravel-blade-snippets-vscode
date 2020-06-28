@@ -2,7 +2,7 @@
 
 Laravel blade snippets and syntax highlight support for Visual Studio Code.
 
-> Suggest Laravel related extension: [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets)
+> Suggest Laravel related extension: [Laravel Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets)
 
 ## Screenshot
 
@@ -17,26 +17,25 @@ Open `Preferences` -> `Settings`
 "blade.format.enable": true,         // if you would like to enable blade format
 ```
 
-> Since extension v1.14.*, emmet setting below for blade is no longer needed. You can remove it.
->```json
->"emmet.includeLanguages": {
->   "blade": "html"
->},
->```
+Specific settings for blade language
+
+```json
+"[blade]": {
+    "editor.autoClosingBrackets": "always"
+},
+```
 
 ## Features
 
 * Blade syntax highlight
-* Laravel blade snippets
+* Blade snippets
 * Emmet works in blade template
 * Blade formatting
 
 ## Blade Syntax Hightlight
 
-![Language Mode](https://github.com/onecentlin/laravel-blade-snippets-vscode/raw/master/images/language-mode.png)
-
 * Auto detected with `.blade.php` extension
-* Manually switch language mode to `Laravel Blade` (`Ctrl + K, M` or `⌘ + K, M`)
+* Manually switch language mode to `Blade` (`Ctrl + K, M` or `⌘ + K, M`)
 
 ## Laravel Blade Snippets
 
@@ -71,6 +70,7 @@ Open `Preferences` -> `Settings`
 | b:includeIf    | @includeIf  (v5.3)              |
 | b:includeWhen  | @includeWhen (v5.4)             |
 | b:includeFirst | @includeFirst (v5.5)            |
+| b:includeUnless| @includeUnless (v6.x)           |
 | b:component    | @component...@endcomponent (v5.4)|
 | b:slot         | @slot...@endslot (v5.4)         |
 | b:isset        | @isset...@endisset (v5.4)       |
@@ -79,8 +79,13 @@ Open `Preferences` -> `Settings`
 | b:guest        | @guest...@endguest (v5.5)       |
 | b:switch       | @switch...@case...@endswitch (v5.5)   |
 | b:lang         | @lang                           |
+| b:csrf         | @csrf (v5.6)                    |
+| b:method       | @method(...) (v5.6)             |
+| b:dump         | @dump(...) (v5.6)               |
 | b:error        | @error...@enderror (v5.8)       |
 | b:props        | @props (v7.4)                   |
+| b:production   | @production...@endproduction    |
+| b:env          | @env...@endenv                  |
 
 ### $loop variable (Laravel v5.3+)
 
@@ -89,14 +94,6 @@ Open `Preferences` -> `Settings`
 | b:loop         | $loop->(index,remaining,count,first,last,depth,parent) |
 | b:loop-first   | @if($loop->first)...@endif      |
 | b:loop-last    | @if($loop->last)...@endif       |
-
-### Laravel v5.6+
-
-| Trigger        | Snippet                         |
-|----------------|---------------------------------|
-| b:csrf         | @csrf                           |
-| b:method       | @method(...)                    |
-| b:dump         | @dump(...)                      |
 
 ## Laravel Helper Snippets for Blade
 

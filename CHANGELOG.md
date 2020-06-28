@@ -1,3 +1,11 @@
+## 1.22.0
+
+- Add `@includeUnless` directive (v6.x)
+- Add environment directives: `@production`, `@env` (v7.x)
+- Rename language mode using `Blade` instead of `Laravel Blade`
+- Enable language feature in blade language mode
+- Reduce extension package size
+
 ## 1.21.0
 
 - Add `b:error` snippets ([@CaddyDz](https://github.com/CaddyDz) - [PR #95](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/95))
