@@ -175,6 +175,7 @@ This comment will not be in the rendered HTML
 @include('view.name', ['some' => 'data'])
 @includeIf('view.name', ['some' => 'data'])
 @includeWhen($boolean, 'view.name', ['some' => 'data'])
+@includeUnless($boolean, 'view.name', ['some' => 'data'])
 @includeFirst(['custom.admin', 'admin'], ['some' => 'data'])
 
 {{-- Rendering Views For Collections --}}
@@ -273,6 +274,14 @@ This comment will not be in the rendered HTML
 @lang('messages.welcome')
 
 @props(['type' => 'info', 'message'])
+
+@production
+    production section
+@endproduction
+
+@env('staging')
+    staging section
+@endenv
 
 {{--  Envoy  --}}
 
