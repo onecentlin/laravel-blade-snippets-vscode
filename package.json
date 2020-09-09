@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.22.0",
+    "version": "1.23.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -79,6 +79,10 @@
             {
                 "language": "blade",
                 "path": "./snippets/helpers.json"
+            },
+            {
+                "language": "blade",
+                "path": "./snippets/livewire.json"
             },
             {
                 "language": "php",

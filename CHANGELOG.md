@@ -1,3 +1,9 @@
+## 1.23.0
+
+- Add `@livewireStyles`, `@livewireScripts`, `@livewire` directive (v8.x)
+- Add `livewire:styles`, `livewire:scripts`, `livewire:component` snippets
+- Cleanup snippets
+
 ## 1.22.0
 
 - Add `@includeUnless` directive (v6.x)

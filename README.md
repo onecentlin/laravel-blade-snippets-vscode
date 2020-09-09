@@ -99,7 +99,7 @@ Specific settings for blade language
 
 | Trigger         | Laravel Helper                  |
 |-----------------|---------------------------------|
-| lv:elixir       | elixir()                        |
+| lv:elixir       | elixir() - deprecated           |
 | lv:mix          | mix()  (v5.4)                   |
 | lv:trans        | trans()                         |
 | lv:action       | action()                        |
