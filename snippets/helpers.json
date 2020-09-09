@@ -4,17 +4,17 @@
     "Path-elixir": {
 		"prefix": "lv:elixir",
 		"body": [
-			"{{ elixir('${1:file}') }}$2"
+			"{{ elixir('${1:file}') }}"
 		],
-		"description": "Laravel Path-elixir"
+		"description": "(deprecated) elixir path"
 	},
 
 	"Path-mix": {
 		"prefix": "lv:mix",
 		"body": [
-			"{{ mix('${1:file}') }}$2"
+			"{{ mix('${1:file}') }}"
 		],
-		"description": "Laravel Path-mix"
+		"description": "mix path"
 	},
 
     // Strings
@@ -22,9 +22,9 @@
     "String-trans": {
 		"prefix": "lv:trans",
 		"body": [
-			"{{ trans('$1') }}$2"
+			"{{ trans('$1') }}"
 		],
-		"description": "Laravel String-trans"
+		"description": "trans"
 	},
 
     // URLs
@@ -32,37 +32,37 @@
     "URL-action": {
 		"prefix": "lv:action",
 		"body": [
-			"{{ action('${1:ControllerName}', [${2:'id'=>1}]) }}$3"
+			"{{ action('${1:ControllerName}', [${2:'id'=>1}]) }}"
 		],
-		"description": "Laravel URL-action"
+		"description": "URL-action"
 	},
     "URL-secure-asset": {
 		"prefix": "lv:secure-asset",
 		"body": [
-			"{{ secure_asset('$1', ${2:\\$title}, ${3:\\$attributes=[]}) }}$4"
+			"{{ secure_asset('$1', ${2:\\$title}, ${3:\\$attributes=[]}) }}"
 		],
-		"description": "Laravel URL-secure-asset"
+		"description": "URL-secure-asset"
 	},
     "URL-url": {
 		"prefix": "lv:url",
 		"body": [
-			"{{ url('${1:url}', [$2]) }}$3"
+			"{{ url('${1:url}', [$2]) }}"
 		],
-		"description": "Laravel URL-url"
+		"description": "URL-url"
 	},
     "URL-asset": {
 		"prefix": "lv:asset",
 		"body": [
-			"{{ asset('$1') }}$2"
+			"{{ asset('$1') }}"
 		],
-		"description": "Laravel URL-asset"
+		"description": "URL-asset"
 	},
     "URL-route": {
 		"prefix": "lv:route",
 		"body": [
-			"{{ route('${1:routeName}', [${2:'id'=>1}]) }}$3"
+			"{{ route('${1:routeName}', [${2:'id'=>1}]) }}"
 		],
-		"description": "Laravel URL-route"
+		"description": "URL-route"
 	},
 
     // Miscellaneous
@@ -70,16 +70,16 @@
     "Form-csrf-field": {
         "prefix": "lv:csrf-field",
         "body": [
-            "{{ csrf_field() }}$1"
+            "{{ csrf_field() }}"
         ],
-        "description": "Laravel CSRF hidden field"
+        "description": "CSRF hidden field"
     },
     "csrf-token": {
         "prefix": "lv:csrf-token",
         "body": [
-            "{{ csrf_token() }}$1"
+            "{{ csrf_token() }}"
         ],
-        "description": "Laravel CSRF token"
+        "description": "CSRF token"
     },
 
 	// Paginate
@@ -87,8 +87,8 @@
 	"Paginate-links": {
         "prefix": "lv:pagination-links",
         "body": [
-            "{{ \\$${1:collection}->links() }}$2"
+            "{{ \\$${1:collection}->links() }}"
         ],
-        "description": "Laravel pagination links"
+        "description": "pagination links"
     }
 }

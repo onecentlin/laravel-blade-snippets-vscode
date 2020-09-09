@@ -6,14 +6,14 @@
 		"body": [
 			"@extends('${1:name}')"
 		],
-		"description": "Blade - extends view layout"
+		"description": "extends view layout"
 	},
 	"Yield content": {
 		"prefix": "b:yield",
 		"body": [
 			"@yield('${1:name}')"
 		],
-		"description": "Blade - yield content section"
+		"description": "yield content section"
 	},
 	"Content Section": {
 		"prefix": "b:section",
@@ -22,7 +22,7 @@
 			"    $2",
 			"@endsection"
 		],
-		"description": "Blade - content section"
+		"description": "content section"
 	},
     "Content Section Show": {
 		"prefix": "b:section-show",
@@ -31,7 +31,7 @@
 			"    $2",
 			"@show"
 		],
-		"description": "Blade - content section show"
+		"description": "content section show"
 	},
 
     /* Include sub-view */
@@ -41,7 +41,7 @@
 		"body": [
 			"@include('${1:name}')"
 		],
-		"description": "Blade - include view"
+		"description": "include view"
 	},
 
     /* If Statements */
@@ -53,7 +53,7 @@
 			"    $2",
 			"@endif"
 		],
-		"description": "Blade - @if block"
+		"description": "@if block"
 	},
 	"If-else-block": {
 		"prefix": "b:if-else",
@@ -64,7 +64,7 @@
 			"    $3",
 			"@endif"
 		],
-		"description": "Blade - if-else block"
+		"description": "if-else block"
 	},
     "Has Section": {
 		"prefix": "b:has-section",
@@ -75,7 +75,7 @@
             "    $3",
             "@endif"
 		],
-		"description": "Blade - @hasSection condition"
+		"description": "@hasSection condition"
     },
     "Unless-block": {
 		"prefix": "b:unless",
@@ -84,7 +84,7 @@
 			"    $2",
 			"@endunless"
 		],
-		"description": "Blade - @unless block"
+		"description": "@unless block"
 	},
 
     /* Loops */
@@ -96,7 +96,7 @@
 			"    $3",
 			"@endfor"
 		],
-		"description": "Blade - @for block"
+		"description": "@for block"
 	},
 	"Foreach-block": {
 		"prefix": "b:foreach",
@@ -105,7 +105,7 @@
 			"    $3",
 			"@endforeach"
 		],
-		"description": "Blade - @foreach block"
+		"description": "@foreach block"
 	},
 	"forelse-block": {
 		"prefix": "b:forelse",
@@ -116,7 +116,7 @@
 			"    $4",
 			"@endforelse"
 		],
-		"description": "Blade - @forelse block"
+		"description": "@forelse block"
 	},
 	"while-block": {
 		"prefix": "b:while",
@@ -125,7 +125,7 @@
 			"    $2",
 			"@endwhile"
 		],
-		"description": "Blade - @while block"
+		"description": "@while block"
 	},
 
     /* Rendering views for collections */
@@ -135,7 +135,7 @@
 		"body": [
             "@each('${1:view.name}', ${2:\\$collection}, '${3:variable}', '${4:view.empty}')"
 		],
-		"description": "Blade - @each loop"
+		"description": "@each loop"
 	},
 
     /* Comments */
@@ -146,7 +146,7 @@
 			"{{-- ${1:comment} --}}",
             "$2"
 		],
-		"description": "Blade - comment block"
+		"description": "comment block"
 	},
 
 	/* Display Data */
@@ -156,21 +156,21 @@
 		"body": [
 			"{{ ${1:\\$data} }}"
 		],
-		"description": "Blade - echo data"
+		"description": "echo data"
 	},
 	"blade echo-unescaped-data": {
 		"prefix": "b:echo-html",
 		"body": [
 			"{!! ${1:\\$html_data} !!}"
 		],
-		"description": "Blade - echo unescaped data (allow html outputs)"
+		"description": "echo unescaped data (allow html outputs)"
 	},
 	"blade echo-untouch": {
 		"prefix": "b:echo-raw",
 		"body": [
 			"@{{ ${1:variable} }}"
 		],
-		"description": "Blade - echo untouched data (allow javascript expression)"
+		"description": "echo untouched data (allow javascript expression)"
 	},
 	"blade verbatim": {
 		"prefix": "b:verbatim",
@@ -179,7 +179,7 @@
 			"{{ ${1:variable} }}",
 			"@endverbatim"
 		],
-		"description": "Blade - displaying JavaScript variables in a large portion of your template"
+		"description": "displaying JavaScript variables in a large portion of your template"
 	},
 
     /* Stacks */
@@ -190,14 +190,14 @@
             "    $2",
             "@endpush"
 		],
-		"description": "Blade - @push stack"
+		"description": "@push stack"
 	},
     "Stack": {
 		"prefix": "b:stack",
 		"body": [
 			"@stack('${1:name}')"
 		],
-		"description": "Blade - @stack"
+		"description": "@stack"
 	},
 
     /* Service Injection */
@@ -207,7 +207,7 @@
 		"body": [
 			"@inject('${1:name}', '${2:class}')"
 		],
-		"description": "Blade - @inject Service"
+		"description": "@inject Service"
 	},
 
 	/* Authorizing */
@@ -219,7 +219,7 @@
 			"\t$3",
 			"@endcan"
 		],
-		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
+		"description": "display a portion of the page only if the user is authorized to perform a given action."
 	},
 	"can-elsecan": {
 		"prefix": "b:can-elsecan",
@@ -230,7 +230,7 @@
 			"\t$5",
 			"@endcan"
 		],
-		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
+		"description": "display a portion of the page only if the user is authorized to perform a given action."
 	},
 	"cannot": {
 		"prefix": "b:cannot",
@@ -239,7 +239,7 @@
 			"\t$3",
 			"@endcannot"
 		],
-		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
+		"description": "display a portion of the page only if the user is authorized to perform a given action."
 	},
 	"can-elsecannot": {
 		"prefix": "b:cannot-elsecannot",
@@ -250,7 +250,7 @@
 			"\t$5",
 			"@endcannot"
 		],
-		"description": "Blade - display a portion of the page only if the user is authorized to perform a given action."
+		"description": "display a portion of the page only if the user is authorized to perform a given action."
 	},
 
 	/* v5.3 - $loop variable */
@@ -260,7 +260,7 @@
 		"body": [
 			"\\$loop->${1:first}$2"
 		],
-		"description": "Blade - $loop->(index|remaining|count|first|last|depth|parent)"
+		"description": "$loop->(index|remaining|count|first|last|depth|parent)"
 	},
 	"loop first": {
 		"prefix": "b:loop-first",
@@ -270,17 +270,16 @@
 			"@endif",
             "$2"
 		],
-		"description": "Blade - $loop->first"
+		"description": "$loop->first"
 	},
 	"loop last": {
 		"prefix": "b:loop-last",
 		"body": [
 			"@if (\\$loop->last)",
 			"    ${1:{{-- This is the last iteration --\\}\\}}",
-			"@endif",
-            "$2"
+			"@endif"
 		],
-		"description": "Blade - $loop->last"
+		"description": "$loop->last"
 	},
 	"php": {
 		"prefix": "b:php",
@@ -289,14 +288,14 @@
 			"    $1",
 			"@endphp"
 		],
-		"description": "Blade - @php block code in view"
+		"description": "@php block code in view"
 	},
 	"includeIf": {
 		"prefix": "b:includeIf",
 		"body": [
 			"@includeIf('${1:view.name}'${2:, ['some' => 'data']})"
 		],
-		"description": "Blade - include a view that may or may not be present, you should use the @includeIf directive"
+		"description": "include a view that may or may not be present, you should use the @includeIf directive"
 	},
 
 	/* v5.4 */
@@ -308,7 +307,7 @@
 			"    $2",
 			"@endcomponent"
 		],
-		"description": "Blade - component"
+		"description": "component"
 	},
 	"slot": {
 		"prefix": "b:slot",
@@ -317,7 +316,7 @@
 			"    $2",
 			"@endslot"
 		],
-		"description": "Blade - slot"
+		"description": "slot"
 	},
 	"isset": {
 		"prefix": "b:isset",
@@ -326,7 +325,7 @@
 			"    $2",
 			"@endisset"
 		],
-		"description": "Blade - isset"
+		"description": "isset"
 	},
 	"empty": {
 		"prefix": "b:empty",
@@ -335,7 +334,7 @@
 			"    $2",
 			"@endempty"
 		],
-		"description": "Blade - empty"
+		"description": "empty"
 	},
 	"error": {
 		"prefix": "b:error",
@@ -344,14 +343,14 @@
 			"    $2",
 			"@enderror"
 		],
-		"description": "Blade - error"
+		"description": "error"
 	},
 	"includeWhen": {
 		"prefix": "b:includeWhen",
 		"body": [
 			"@includeWhen(${1:\\$boolean}, '${2:view.name}', [${3:'some' => 'data'}])"
 		],
-		"description": "Blade - includeWhen"
+		"description": "includeWhen"
 	},
 
 	/* v5.5 */
@@ -363,7 +362,7 @@
 			"    $1",
 			"@endauth"
 		],
-		"description": "Blade - auth"
+		"description": "auth"
 	},
 	"guest": {
 		"prefix": "b:guest",
@@ -372,7 +371,7 @@
 			"    $1",
 			"@endguest"
 		],
-		"description": "Blade - guest"
+		"description": "guest"
 	},
 	"switch": {
 		"prefix": "b:switch",
@@ -388,14 +387,14 @@
 			"        $6",
 			"@endswitch"
 		],
-		"description": "Blade - switch"
+		"description": "switch"
 	},
 	"includeFirst": {
 		"prefix": "b:includeFirst",
 		"body": [
 			"@includeFirst(['${1:view.name}', '${2:variable}'], [${3:'some' => 'data'}])"
 		],
-		"description": "Blade - includeFirst"
+		"description": "includeFirst"
 	},
 
 	/* v5.6 */
@@ -405,21 +404,21 @@
 		"body": [
 			"@csrf"
 		],
-		"description": "Blade - form csrf field"
+		"description": "form csrf field"
 	},
 	"method": {
 		"prefix": "b:method",
 		"body": [
 			"@method($1)"
 		],
-		"description": "Blade - form method field"
+		"description": "form method field"
 	},
 	"dump": {
 		"prefix": "b:dump",
 		"body": [
 			"@dump($1)"
 		],
-		"description": "Blade - dump"
+		"description": "dump"
 	},
 
 	/* Retrieving Translation Strings */
@@ -429,7 +428,7 @@
 		"body": [
 			"@lang('${1:messages.welcome}')"
 		],
-		"description": "Blade - lang"
+		"description": "lang"
 	},
 
 	/* v6.x */
@@ -439,7 +438,7 @@
 		"body": [
 			"@includeUnless(${1:\\$boolean}, '${2:view.name}', [${3:'some' => 'data'}])"
 		],
-		"description": "Blade - includeUnless"
+		"description": "includeUnless"
 	},
 
 	/* v7.x */
@@ -456,7 +455,7 @@
 			"    $2",
 			"@endenv"
 		],
-		"description": "Blade - env"
+		"description": "env"
 	},
 	"production": {
 		"prefix": "b:production",
@@ -465,6 +464,6 @@
 			"    $1",
 			"@endproduction"
 		],
-		"description": "Blade - production"
+		"description": "production"
 	}
 }
