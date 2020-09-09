@@ -302,3 +302,10 @@ deployment_start
 deployment_composer
 deployment_finish
 @endstory
+
+{{-- Livewire --}}
+
+@livewireStyles
+@livewireScripts
+
+@livewire('user-profile', ['user' => $user], key($user->id))
