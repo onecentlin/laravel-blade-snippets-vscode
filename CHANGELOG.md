@@ -1,3 +1,7 @@
+## 1.24.0
+
+- Update blade syntaxes
+
 ## 1.23.0
 
 - Add `@livewireStyles`, `@livewireScripts`, `@livewire` directive (v8.x)
