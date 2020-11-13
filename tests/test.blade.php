@@ -19,10 +19,17 @@ Hello, {!! $name !!}.
 {{--  Rendering JSON  --}}
 <script>
     var app = @json($array);
+    var app = @json($array, JSON_PRETTY_PRINT);
 </script>
 
 {{-- Blade & JavaScript Frameworks --}}
 Hello, @{{ name }}.
+
+{{-- Blade --}}
+@@json()
+
+<!-- HTML output -->
+@json()
 
 @verbatim
     <div class="container">
@@ -54,9 +61,73 @@ Hello, @{{ name }}.
     // $records is "empty"...
 @endempty
 
-@error('field')
-    {{ $message }}
-@enderror
+
+{{-- Authentication Directives --}}
+
+@auth
+    // The user is authenticated...
+@endauth
+
+@guest
+    // The user is not authenticated...
+@endguest
+
+@auth('admin')
+    // The user is authenticated...
+@endauth
+
+@guest('admin')
+    // The user is not authenticated...
+@endguest
+
+
+{{-- Section Directives --}}
+
+@hasSection('navigation')
+    <div class="pull-right">
+        @yield('navigation')
+    </div>
+
+    <div class="clearfix"></div>
+@endif
+
+@sectionMissing('navigation')
+    <div class="pull-right">
+        @include('default-navigation')
+    </div>
+@endif
+
+
+{{-- Environment Directives --}}
+
+@production
+    // Production specific content...
+@endproduction
+
+@env('staging')
+    // The application is running in "staging"...
+@endenv
+
+@env(['staging', 'production'])
+    // The application is running in "staging" or "production"...
+@endenv
+
+
+{{-- Switch Statements --}}
+
+@switch($i)
+    @case(1)
+        First case...
+        @break
+
+    @case(2)
+        Second case...
+        @break
+
+    @default
+        Default case...
+@endswitch
+
 
 {{-- Loops --}}
 
@@ -157,11 +228,50 @@ This comment will not be in the rendered HTML
     }
 ?>
 
+@php ($hello = "hello world")
+
 @php
     foreach (range(1, 10) as $number) {
         echo $number;
     }
 @endphp
+
+{{-- The @once Directive --}}
+
+@once
+    @push('scripts')
+        <script>
+            // Your custom JavaScript...
+        </script>
+    @endpush
+@endonce
+
+{{-- Forms --}}
+<form method="POST" action="/foo/bar">
+    @csrf
+    @method('PUT')
+</form>
+
+{{-- Validation Errors --}}
+
+<label for="title">Post Title</label>
+
+<input id="title" type="text" class="@error('title') is-invalid @enderror">
+
+@error('title')
+    <div class="alert alert-danger">{{ $message }}</div>
+@enderror
+
+
+{{-- Components --}}
+<x-package-alert />
+<x-nightshade::calendar />
+<x-nightshade::color-picker />
+<x-inputs.button />
+<x-test></x-test>
+<x-alert type="error" :message="$message"/>
+<x-dynamic-component :component="$componentName" class="mt-4" />
+
 
 {{-- Including Sub-Views --}}
 <div>
@@ -188,6 +298,10 @@ This comment will not be in the rendered HTML
 @endpush
 
 @stack('scripts')
+
+@prepend('scripts')
+    This will be first...
+@endprepend
 
 {{-- Service Injection --}}
 @inject('metrics', 'App\Services\MetricsService')
@@ -245,29 +359,6 @@ This comment will not be in the rendered HTML
     <!-- The Current User Can't Create Posts -->
 @endcannot
 
-{{--  Authentication Shortcuts  --}}
-@auth
-    // The user is authenticated...
-@endauth
-
-@guest
-    // The user is not authenticated...
-@endguest
-
-{{--  Switch Statements  --}}
-@switch($i)
-    @case(1)
-        First case...
-        @break
-
-    @case(2)
-        Second case...
-        @break
-
-    @default
-        Default case...
-@endswitch
-
 {{--  Retrieving Translation Strings  --}}
 
 {{ __('messages.welcome') }}
@@ -275,13 +366,6 @@ This comment will not be in the rendered HTML
 
 @props(['type' => 'info', 'message'])
 
-@production
-    production section
-@endproduction
-
-@env('staging')
-    staging section
-@endenv
 
 {{--  Envoy  --}}
 

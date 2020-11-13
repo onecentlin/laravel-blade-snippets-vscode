@@ -1,3 +1,9 @@
+## 1.25.0
+
+- Add `@once` directive
+- Fix ([#121](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/121) @php() highlighting
+- Update blade syntaxes
+
 ## 1.24.0
 
 - Update blade syntaxes
