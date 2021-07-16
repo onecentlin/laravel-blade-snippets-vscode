@@ -30,5 +30,14 @@
             "});"
         ],
         "description": "Custom directive (AppServiceProvider boot method)"
+    },
+    "Blade-stringable": {
+        "prefix": "Blade::stringable",
+        "body": [
+            "Blade::stringable(function (${1:Money} $${2:money}) {",
+            "    ${3:return $$money->formatTo('en_GB');}",
+            "});"
+        ],
+        "description": "Custom echo handlers (AppServiceProvider boot method)"
     }
 }

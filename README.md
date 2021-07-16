@@ -117,6 +117,7 @@ Specific settings for blade language
 - `Blade::include`
 - `Blade::if`
 - `Blade::directive`
+- `Blade::stringable`
 
 ## Contact
 
