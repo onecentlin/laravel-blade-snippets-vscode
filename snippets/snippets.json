@@ -465,5 +465,13 @@
 			"@endproduction"
 		],
 		"description": "production"
-	}
+	},
+	
+	/* v8.x */
+	
+	"class": {
+		"prefix": "b:class",
+		"body": "@class(['${1:p-4}', ${2:'font-bold' => true}])",
+		"description": "conditionally compiles a CSS class string"
+        }
 }
