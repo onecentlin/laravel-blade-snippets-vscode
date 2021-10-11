@@ -1,3 +1,9 @@
+## 1.26.0
+
+- Add `b:once` snippet ([@lakuapik](https://github.com/lakuapik) - [PR #137](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/137))
+- Add `Blade::stringable` snippet ([@lakuapik](https://github.com/lakuapik) - [PR #135](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/135))
+- Update packages
+
 ## 1.25.0
 
 - Add `@once` directive

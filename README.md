@@ -86,6 +86,7 @@ Specific settings for blade language
 | b:props        | @props (v7.4)                   |
 | b:production   | @production...@endproduction    |
 | b:env          | @env...@endenv                  |
+| b:once         | @once...@endonce                |
 
 ### $loop variable (Laravel v5.3+)
 
