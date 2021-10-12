@@ -113,6 +113,23 @@ Hello, @{{ name }}.
 @endenv
 
 
+{{-- Section Directives --}}
+
+@hasSection('navigation')
+    <div class="pull-right">
+        @yield('navigation')
+    </div>
+
+    <div class="clearfix"></div>
+@endif
+
+@sectionMissing('navigation')
+    <div class="pull-right">
+        @include('default-navigation')
+    </div>
+@endif
+
+
 {{-- Switch Statements --}}
 
 @switch($i)
@@ -168,7 +185,17 @@ Hello, @{{ name }}.
 
 @endforeach
 
+@foreach ($users as $user)
+    @continue($user->type == 1)
+
+    <li>{{ $user->name }}</li>
+
+    @break($user->number == 5)
+@endforeach
+
+
 {{-- The Loop Variable --}}
+
 @foreach ($users as $user)
     @if ($loop->first)
         This is the first iteration.
@@ -183,9 +210,11 @@ Hello, @{{ name }}.
     {{-- $loop->parent --}}
     @foreach ($user->posts as $post)
         @if ($loop->parent->first)
-            This is first iteration of the parent loop.
+            This is the first iteration of the parent loop.
         @endif
     @endforeach
+@endforeach
+
 
 {{-- Loop Variables --}}
 
@@ -235,6 +264,24 @@ This comment will not be in the rendered HTML
         echo $number;
     }
 @endphp
+
+
+{{-- Conditional Classes : `@class` directive --}}
+
+@php
+    $isActive = false;
+    $hasError = true;
+@endphp
+
+<span @class([
+    'p-4',
+    'font-bold' => $isActive,
+    'text-gray-500' => ! $isActive,
+    'bg-red' => $hasError,
+])></span>
+
+<span class="p-4 text-gray-500 bg-red"></span>
+
 
 {{-- The @once Directive --}}
 
