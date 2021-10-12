@@ -473,5 +473,14 @@
 		"prefix": "b:class",
 		"body": "@class(['${1:p-4}', ${2:'font-bold' => true}])",
 		"description": "conditionally compiles a CSS class string"
-        }
+    },
+	"once": {
+		"prefix": "b:once",
+		"body": [
+			"@once",
+			"    $1",
+			"@endonce"
+		],
+		"description": "define a portion of template that will only be evaluated once per rendering cycle"
+	}
 }

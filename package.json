@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.25.0",
+    "version": "1.26.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -112,9 +112,9 @@
         "webpack-cli": "^3.3.12"
     },
     "dependencies": {
-        "vscode-css-languageservice": "^4.2.0",
-        "vscode-html-languageservice": "^3.0.3",
+        "vscode-css-languageservice": "^5.1.7",
+        "vscode-html-languageservice": "^4.1.0",
         "vscode-languageclient": "^6.1.3",
-        "vscode-languageserver-types": "^3.15.1"
+        "vscode-languageserver-types": "^3.16.0"
     }
 }
