@@ -1,3 +1,9 @@
+## 1.27.0
+
+- Add `@class` directive syntax highlight
+- Update blade syntaxes
+- Fix snippet
+
 ## 1.26.0
 
 - Add `b:once` snippet ([@lakuapik](https://github.com/lakuapik) - [PR #137](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/137))

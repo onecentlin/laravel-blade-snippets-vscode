@@ -474,6 +474,6 @@
 			"    $1",
 			"@endonce"
 		],
-		"description": "define a portion of template that will only be evaluated once per rendering cycle",
+		"description": "define a portion of template that will only be evaluated once per rendering cycle"
 	}
 }

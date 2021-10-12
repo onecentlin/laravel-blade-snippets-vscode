@@ -14,3 +14,5 @@ server/*.json
 server/node_modules/.bin/
 webpack.config.js
 node_modules/**
+**/*.ts
+**/tsconfig.json
