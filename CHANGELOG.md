@@ -1,3 +1,7 @@
+## 1.28.0
+
+- Added support attribute expressions syntax highlighting ([@cpof-tea](https://github.com/cpof-tea) - [PR #138](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/138))
+
 ## 1.27.0
 
 - Add `@class` directive syntax highlight
