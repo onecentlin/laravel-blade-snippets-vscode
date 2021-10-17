@@ -319,6 +319,52 @@ This comment will not be in the rendered HTML
 <x-alert type="error" :message="$message"/>
 <x-dynamic-component :component="$componentName" class="mt-4" />
 
+{{-- Component attribute expressions --}}
+<x-test
+    str="empty"
+    :null="null"
+    :bool-t="true"
+    :bool-f="false"
+    :num-dec-a="1234"
+    :num-dec-b="12_34"
+    :num-dec-c="0123"
+    :num-hex="0x1A"
+    :num-bin="0b101"
+    :num-float-a="1.234"
+    :num-float-b="1.2e3"
+    :num-float-c="7E-10"
+    :num-float-d="1_234.567"
+    :expr-math-a="true + -2 - (3 * 40) / 5 % 6 ^ '7' ** $a"
+    :expr-bit="$a & $b | $a ^ $b << $a >> $b"
+    :expr-str="1 . 'test' . '\\' . $a . true"
+    :expr-arr="[] + []"
+    :expr-func-call="func()"
+    :expr-func-arrow="fn($a) => $a"
+    :expr-cond="$a ? !$b : $c || $a ?: $b || $a ?? $b and $a or $a xor $b"
+    :expr-comp-a="$a == $b"
+    :expr-comp-b="$a === $b"
+    :expr-comp-c="$a != $b"
+    :expr-comp-d="$a <> $b"
+    :expr-comp-e="$a !== $b"
+    :expr-comp-f="$a < $b"
+    :expr-comp-g="$a > $b"
+    :expr-comp-h="$a >= $b"
+    :expr-comp-i="$a <= $b"
+    :expr-comp-j="$a <=> $b"
+    :expr-type="$a instanceof MyClass"
+    :expr-class-a="new MyClass()"
+    :expr-class-b="(new MyClass())->prop"
+    :expr-class-c="(new MyClass())->do()"
+    :expr-class-d="MyClass::class"
+    :expr-class-e="MyClass::$prop"
+    :expr-class-f="MyClass::do()"
+    :expr-class-g="$this->prop"
+    :expr-class-h="$this->do()"
+    :expr-class-i="$instance->prop"
+    :expr-class-j="$instance->do()"
+    :arr="['valueA', true, 0 => 'valueB', 'keyC' => 'valueC']"
+/>
+
 
 {{-- Including Sub-Views --}}
 <div>
