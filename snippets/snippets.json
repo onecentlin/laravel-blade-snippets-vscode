@@ -475,5 +475,17 @@
 			"@endonce"
 		],
 		"description": "define a portion of template that will only be evaluated once per rendering cycle"
+	},
+
+	/* v8.x */
+
+	"class": {
+		"prefix": "b:class",
+		"body": [
+			"@class([",
+			"\t\"$1\" => $2",
+			"])"
+		],
+		"description": "conditionally compiles a CSS class string"
 	}
 }
