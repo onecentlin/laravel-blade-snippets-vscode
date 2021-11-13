@@ -486,6 +486,6 @@
 			"\t\"$1\" => $2",
 			"])"
 		],
-		"description": "conditionally compiles a CSS class string"
+		"description": "conditionally compiles a CSS class string. (Laravel >=8.51)"
 	}
 }
