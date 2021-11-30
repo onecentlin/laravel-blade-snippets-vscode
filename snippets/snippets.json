@@ -232,6 +232,26 @@
 		],
 		"description": "display a portion of the page only if the user is authorized to perform a given action."
 	},
+	"canany": {
+		"prefix": "b:canany",
+		"body": [
+			"@canany(['${1:update}'], ${2:Model}::class)",
+			"\t$3",
+			"@endcanany"
+		],
+		"description": "display a portion of the page only if the user is authorized to perform a given action."
+	},
+	"canany-elsecanany": {
+		"prefix": "b:canany-elsecanany",
+		"body": [
+			"@canany(['${1:update}'], ${2:\\$post})",
+			"\t$3",
+			"@elsecanany(['${4:create}'], $2)",
+			"\t$5",
+			"@endcanany"
+		],
+		"description": "display a portion of the page only if the user is authorized to perform a given action."
+	},
 	"cannot": {
 		"prefix": "b:cannot",
 		"body": [

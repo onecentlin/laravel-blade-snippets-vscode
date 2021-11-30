@@ -430,6 +430,12 @@ This comment will not be in the rendered HTML
     <!-- The Current User Can Create New Post -->
 @endcan
 
+@canany(['update'], $post)
+    <!-- The Current User Can Update The Post -->
+@elsecanany(['create'], $post)
+    <!-- The Current User Can Create New Post -->
+@endcan
+
 @cannot('update', $post)
     <!-- The Current User Can't Update The Post -->
 @elsecannot('create', $post)
@@ -447,6 +453,10 @@ This comment will not be in the rendered HTML
 @can('create', Post::class)
     <!-- The Current User Can Create Posts -->
 @endcan
+
+@canany(['create'], Post::class)
+    <!-- The Current User Can Create Posts -->
+@endcanany
 
 @cannot('create', Post::class)
     <!-- The Current User Can't Create Posts -->
