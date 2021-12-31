@@ -63,6 +63,8 @@ Specific settings for blade language
 | b:echo-raw     | @{{ variable }}                 |
 | b:can          | @can...@endcan (v5.1)           |
 | b:can-elsecan  | @can...@elsecan...@endcan (v5.1)|
+| b:canany       | @canany...@endcanany (v5.8)     |
+| b:canany-elsecanany | @canany...@elsecanany...@endcanany (v5.8) |
 | b:cannot       | @cannot...@endcannot (v5.3)     |
 | b:cannot-elsecannot | @cannot...@elsecannot...@endcannot (v5.3) |
 | b:verbatim     | @verbatim...@endverbatim  (v5.3)|
