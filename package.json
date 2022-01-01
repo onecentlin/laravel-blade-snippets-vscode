@@ -2,7 +2,7 @@
     "name": "laravel-blade",
     "displayName": "Laravel Blade Snippets",
     "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.28.0",
+    "version": "1.29.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -37,7 +37,7 @@
         "Snippets",
         "Formatters"
     ],
-    "main": "./out/extension",
+    "main": "./out/extension.js",
     "scripts": {
         "build-srv": "cd ./server && npm install && tsc -p ./",
         "compile": "tsc -watch -p ./",
@@ -104,12 +104,12 @@
         "onLanguage:blade"
     ],
     "devDependencies": {
-        "@types/node": "^14.0.14",
+        "@types/node": "^16.0.0",
         "@types/vscode": "^1.46.0",
         "ts-loader": "^7.0.5",
         "typescript": "^3.9.5",
         "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.12"
+        "webpack-cli": "^4.9.1"
     },
     "dependencies": {
         "vscode-css-languageservice": "^5.1.7",

@@ -1,3 +1,12 @@
+## 1.29.0
+
+Happy New Year 2022!
+
+- Add `b:canany` and `b:canany-cananyelse` snippet ([@JustinByrne](https://github.com/JustinByrne) - [PR #144](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/144))
+- Fix snippet
+- Update blade syntaxes
+- Update packages
+
 ## 1.28.0
 
 - Added support attribute expressions syntax highlighting ([@cpof-tea](https://github.com/cpof-tea) - [PR #138](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/138))
