@@ -5,7 +5,7 @@ Hello, {{ $name }}.
 The current UNIX timestamp is {{ time() }}.
 
 {{-- Escape Data --}}
-Hello, {{{ $name }}}.                                                           
+Hello, {{{ $name }}}.
 
 {{-- Echoing Data If It Exists --}}
 {{ isset($name) ? $name : 'Default' }}
@@ -426,19 +426,19 @@ This comment will not be in the rendered HTML
 
 @can('update', $post)
     <!-- The Current User Can Update The Post -->
-@elsecan('create', $post)
+@elsecan('create', App\Models\Post::class)
     <!-- The Current User Can Create New Post -->
 @endcan
 
 @canany(['update'], $post)
     <!-- The Current User Can Update The Post -->
-@elsecanany(['create'], $post)
+@elsecanany(['create'], App\Models\Post::class)
     <!-- The Current User Can Create New Post -->
-@endcan
+@endcanany
 
 @cannot('update', $post)
     <!-- The Current User Can't Update The Post -->
-@elsecannot('create', $post)
+@elsecannot('create', App\Models\Post::class)
     <!-- The Current User Can't Create New Post -->
 @endcannot
 
@@ -450,15 +450,15 @@ This comment will not be in the rendered HTML
     <!-- The Current User Can't Update The Post -->
 @endunless
 
-@can('create', Post::class)
+@can('create', App\Models\Post::class)
     <!-- The Current User Can Create Posts -->
 @endcan
 
-@canany(['create'], Post::class)
+@canany(['create'], App\Models\Post::class)
     <!-- The Current User Can Create Posts -->
 @endcanany
 
-@cannot('create', Post::class)
+@cannot('create', App\Models\Post::class)
     <!-- The Current User Can't Create Posts -->
 @endcannot
 

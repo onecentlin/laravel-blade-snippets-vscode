@@ -215,7 +215,7 @@
 	"can": {
 		"prefix": "b:can",
 		"body": [
-			"@can('${1:update}', ${2:Model}::class)",
+			"@can('${1:update}', ${2:\\$post})",
 			"\t$3",
 			"@endcan"
 		],
@@ -226,7 +226,7 @@
 		"body": [
 			"@can('${1:update}', ${2:\\$post})",
 			"\t$3",
-			"@elsecan('${4:create}', $2)",
+			"@elsecan('create', App\\Models\\\\${4:Post}::class)",
 			"\t$5",
 			"@endcan"
 		],
@@ -235,8 +235,8 @@
 	"canany": {
 		"prefix": "b:canany",
 		"body": [
-			"@canany(['${1:update}'], ${2:Model}::class)",
-			"\t$3",
+			"@canany(['update', 'view', 'delete'], ${1:\\$post})",
+			"\t$2",
 			"@endcanany"
 		],
 		"description": "display a portion of the page only if the user is authorized to perform a given action."
@@ -244,10 +244,10 @@
 	"canany-elsecanany": {
 		"prefix": "b:canany-elsecanany",
 		"body": [
-			"@canany(['${1:update}'], ${2:\\$post})",
-			"\t$3",
-			"@elsecanany(['${4:create}'], $2)",
-			"\t$5",
+			"@canany(['update', 'view', 'delete'], ${1:\\$post})",
+			"\t$2",
+			"@elsecanany(['create'], App\\Models\\\\${3:Post}::class)",
+			"\t$4",
 			"@endcanany"
 		],
 		"description": "display a portion of the page only if the user is authorized to perform a given action."
@@ -255,19 +255,19 @@
 	"cannot": {
 		"prefix": "b:cannot",
 		"body": [
-			"@cannot('${1:update}', ${2:Model}::class)",
+			"@cannot('${1:update}', ${2:\\$post})",
 			"\t$3",
 			"@endcannot"
 		],
 		"description": "display a portion of the page only if the user is authorized to perform a given action."
 	},
-	"can-elsecannot": {
+	"cannot-elsecannot": {
 		"prefix": "b:cannot-elsecannot",
 		"body": [
 			"@cannot('${1:update}', ${2:\\$post})",
 			"\t$3",
-			"@elsecannot('${4:create}', $2)",
-			"\t$5",
+			"@elsecannot('create', App\\Models\\\\${5:Post}::class)",
+			"\t$6",
 			"@endcannot"
 		],
 		"description": "display a portion of the page only if the user is authorized to perform a given action."
@@ -486,7 +486,7 @@
 		],
 		"description": "production"
 	},
-	
+
 	"once": {
 		"prefix": "b:once",
 		"body": [
