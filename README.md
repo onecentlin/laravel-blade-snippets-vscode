@@ -89,6 +89,8 @@ Specific settings for blade language
 | b:production   | @production...@endproduction    |
 | b:env          | @env...@endenv                  |
 | b:once         | @once...@endonce                |
+| b:checked      | @checked (v9.x)                 |
+| b:selected     | @selected (v9.x)                |
 
 ### $loop variable (Laravel v5.3+)
 
@@ -121,6 +123,8 @@ Specific settings for blade language
 - `Blade::if`
 - `Blade::directive`
 - `Blade::stringable`
+- `Blade::render`
+- `Blade::renderComponent`
 
 ## Contact
 

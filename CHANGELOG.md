@@ -1,3 +1,11 @@
+## 1.30.0
+
+Add Laravel 9 features
+
+- Add `b:checked` and `b:selected` snippet
+- Add `@checked` and `@selected` directive syntax highlight
+- Add `Blade::render` and `Blade::renderComponent` snippet
+
 ## 1.29.0
 
 Happy New Year 2022!
