@@ -495,5 +495,17 @@
 			"@endonce"
 		],
 		"description": "define a portion of template that will only be evaluated once per rendering cycle"
+	},
+
+	/* v9.x */
+	"checked": {
+		"prefix": "b:checked",
+		"body": "@checked(${1:true})",
+		"description": "This directive will echo checked if the provided condition evaluates to true (Laravel 9.x)"
+	},
+	"selected": {
+		"prefix": "b:selected",
+		"body": "@selected(${1:true})",
+		"description": "The @selected directive may be used to indicate if a given select option should be \"selected\" (Laravel 9.x)"
 	}
 }

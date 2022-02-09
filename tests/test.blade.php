@@ -496,3 +496,18 @@ deployment_finish
 @livewireScripts
 
 @livewire('user-profile', ['user' => $user], key($user->id))
+
+{{-- Checked / Selected Blade Directives (9.x) --}}
+
+<input type="checkbox"
+        name="active"
+        value="active"
+        @checked(old('active', $user->active)) />
+
+<select name="version">
+    @foreach ($product->versions as $version)
+        <option value="{{ $version }}" @selected(old('version') == $version)>
+            {{ $version }}
+        </option>
+    @endforeach
+</select>
