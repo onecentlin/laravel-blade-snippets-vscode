@@ -89,6 +89,8 @@ Specific settings for blade language
 | b:production   | @production...@endproduction    |
 | b:env          | @env...@endenv                  |
 | b:once         | @once...@endonce                |
+| b:aware        | @aware (v8.64)                  |
+| b:js           | @js (v8.71)                     |
 | b:checked      | @checked (v9.x)                 |
 | b:selected     | @selected (v9.x)                |
 
@@ -116,13 +118,18 @@ Specific settings for blade language
 | lv:csrf-token   | csrf_token()                    |
 | lv:pagination-links | $collection->links()        |
 
-## Blade extensions (register in the `boot` method of `ServiceProvider`)
+## Blade extensions
+
+Register in the `boot` method of `ServiceProvider`
 
 - `Blade::component`
 - `Blade::include`
 - `Blade::if`
 - `Blade::directive`
 - `Blade::stringable`
+
+Rendering inline blade templates
+
 - `Blade::render`
 - `Blade::renderComponent`
 

@@ -1,3 +1,10 @@
+## 1.31.0
+
+- Add `b:aware` and `b:js` snippet
+- Add `@aware` directive ([Laravel 8.64](https://laravel-news.com/laravel-8-64-0))
+- Add `@js` directive ([Laravel 8.71](https://laravel-news.com/laravel-8-71-0))
+- Update `Blade::render` and `Blade::renderComponent` snippet
+
 ## 1.30.0
 
 Add Laravel 9 features
