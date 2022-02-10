@@ -501,7 +501,7 @@
 
 	"aware": {
 		"prefix": "b:aware",
-		"body": "@aware($1)",
+		"body": "@aware(['${1:propName}'])",
 		"description": "Accessing data from a parent component (Laravel 8.x)"
 	},
 

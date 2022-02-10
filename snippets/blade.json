@@ -43,14 +43,14 @@
     "Blade-render": {
         "prefix": "Blade::render",
         "body": [
-            "Blade::render('${1:Blade template string}', ${2:\\$data})"
+            "Blade::render(${1:'Blade template string'}, ${2:\\$data});"
         ],
         "description": "Transform a raw Blade template string into valid HTML (Laravel 9.x)"
     },
     "Blade-renderComponent": {
         "prefix": "Blade::renderComponent",
         "body": [
-            "Blade::renderComponent(new ${1:Hello}Component(${2:\\$params}))"
+            "Blade::renderComponent(new ${1:HelloComponent}(${2:\\$params}));"
         ],
         "description": "Render a given class component by passing the component instance to the method  (Laravel 9.x)"
     }
