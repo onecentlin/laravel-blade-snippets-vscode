@@ -499,10 +499,15 @@
 
 	/* v8.x */
 
-	"aware": {
+	"blade-aware": {
 		"prefix": "b:aware",
 		"body": "@aware(['${1:propName}'])",
-		"description": "Accessing data from a parent component (Laravel 8.x)"
+		"description": "Accessing data from a parent component (Laravel 8.64)"
+	},
+	"blade-js": {
+		"prefix": "b:js",
+		"body": "@js(${1:\\$data})",
+		"description": "This directive is useful to properly escape JSON within HTML quotes"
 	},
 
 	/* v9.x */
