@@ -1,120 +1,120 @@
 {
-    "name": "laravel-blade",
-    "displayName": "Laravel Blade Snippets",
-    "description": "Laravel blade snippets and syntax highlight support",
-    "version": "1.31.0",
-    "publisher": "onecentlin",
-    "author": {
-        "name": "Winnie Lin",
-        "email": "onecentlin@gmail.com",
-        "url": "https://devmanna.blogspot.com"
-    },
-    "homepage": "https://github.com/onecentlin/laravel-blade-snippets-vscode",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode"
-    },
-    "bugs": {
-        "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
-    },
-    "engines": {
-        "vscode": "^1.46.0"
-    },
-    "keywords": [
-        "laravel",
-        "blade",
-        "template",
-        "snippet",
-        "formatter"
+  "name": "laravel-blade",
+  "displayName": "Laravel Blade Snippets",
+  "description": "Laravel blade snippets and syntax highlight support",
+  "version": "1.32.0",
+  "publisher": "onecentlin",
+  "author": {
+    "name": "Winnie Lin",
+    "email": "onecentlin@gmail.com",
+    "url": "https://devmanna.blogspot.com"
+  },
+  "homepage": "https://github.com/onecentlin/laravel-blade-snippets-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "keywords": [
+    "laravel",
+    "blade",
+    "template",
+    "snippet",
+    "formatter"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "build-srv": "cd ./server && npm install && tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "vscode:prepublish": "webpack --mode production && pushd \"./\" && npm run build-srv && popd",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "blade",
+        "aliases": [
+          "Blade",
+          "blade"
+        ],
+        "extensions": [
+          ".blade.php"
+        ],
+        "configuration": "./blade.configuration.json"
+      }
     ],
-    "icon": "images/icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Programming Languages",
-        "Snippets",
-        "Formatters"
-    ],
-    "main": "./out/extension.js",
-    "scripts": {
-        "build-srv": "cd ./server && npm install && tsc -p ./",
-        "compile": "tsc -watch -p ./",
-        "vscode:prepublish": "webpack --mode production && pushd \"./\" && npm run build-srv && popd",
-        "webpack": "webpack --mode development",
-        "webpack-dev": "webpack --mode development --watch"
-    },
-    "contributes": {
-        "languages": [
-            {
-                "id": "blade",
-                "aliases": [
-                    "Blade",
-                    "blade"
-                ],
-                "extensions": [
-                    ".blade.php"
-                ],
-                "configuration": "./blade.configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "blade",
-                "scopeName": "text.html.php.blade",
-                "path": "./syntaxes/blade.tmLanguage.json",
-                "embeddedLanguages": {
-                    "source.php": "php",
-                    "source.css": "css",
-                    "source.js": "javascript"
-                }
-            }
-        ],
-        "snippets": [
-            {
-                "language": "blade",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "blade",
-                "path": "./snippets/helpers.json"
-            },
-            {
-                "language": "blade",
-                "path": "./snippets/livewire.json"
-            },
-            {
-                "language": "php",
-                "path": "./snippets/blade.json"
-            }
-        ],
-        "configuration": {
-            "title": "Blade Configuration",
-            "properties": {
-                "blade.format.enable": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Enable format blade file"
-                }
-            }
+    "grammars": [
+      {
+        "language": "blade",
+        "scopeName": "text.html.php.blade",
+        "path": "./syntaxes/blade.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.php": "php",
+          "source.css": "css",
+          "source.js": "javascript"
         }
-    },
-    "activationEvents": [
-        "onLanguage:blade"
+      }
     ],
-    "devDependencies": {
-        "@types/node": "^16.0.0",
-        "@types/vscode": "^1.46.0",
-        "ts-loader": "^7.0.5",
-        "typescript": "^3.9.5",
-        "webpack": "^4.43.0",
-        "webpack-cli": "^4.9.1"
-    },
-    "dependencies": {
-        "vscode-css-languageservice": "^5.1.7",
-        "vscode-html-languageservice": "^4.1.0",
-        "vscode-languageclient": "^6.1.3",
-        "vscode-languageserver-types": "^3.16.0"
+    "snippets": [
+      {
+        "language": "blade",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets/helpers.json"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets/livewire.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/blade.json"
+      }
+    ],
+    "configuration": {
+      "title": "Blade Configuration",
+      "properties": {
+        "blade.format.enable": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable format blade file"
+        }
+      }
     }
+  },
+  "activationEvents": [
+    "onLanguage:blade"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@types/vscode": "^1.46.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "vscode-css-languageservice": "^5.1.7",
+    "vscode-html-languageservice": "^4.1.0",
+    "vscode-languageclient": "^6.1.3",
+    "vscode-languageserver-types": "^3.16.0"
+  }
 }

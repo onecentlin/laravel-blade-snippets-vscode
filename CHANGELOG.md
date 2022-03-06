@@ -1,3 +1,8 @@
+## 1.32.0
+
+- Add `@disabled` directive and `b:disabled` snippet ([@JustinByrne](https://github.com/JustinByrne) - [PR #151](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/151))
+- Add `b:class` snippet (PR #136 and PR #140 - Thanks to [@lakuapik](https://github.com/lakuapik) and [@wilsenhc](https://github.com/wilsenhc))
+
 ## 1.31.0
 
 - Add `b:aware` and `b:js` snippet

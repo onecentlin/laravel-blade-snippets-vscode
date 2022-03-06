@@ -89,6 +89,7 @@ Specific settings for blade language
 | b:production        | @production...@endproduction              |
 | b:env               | @env...@endenv                            |
 | b:once              | @once...@endonce                          |
+| b:class             | @class (v8.51)                            |
 | b:aware             | @aware (v8.64)                            |
 | b:js                | @js (v8.71)                               |
 | b:checked           | @checked (v9.x)                           |
