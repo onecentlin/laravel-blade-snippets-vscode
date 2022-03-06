@@ -497,7 +497,7 @@ deployment_finish
 
 @livewire('user-profile', ['user' => $user], key($user->id))
 
-{{-- Checked / Selected Blade Directives (9.x) --}}
+{{-- Checked / Selected / Disabled Blade Directives (9.x) --}}
 
 <input type="checkbox"
         name="active"
@@ -511,3 +511,7 @@ deployment_finish
         </option>
     @endforeach
 </select>
+
+<button type="submit" @disabled($errors->isNotEmpty())>
+    Submit
+</button>
