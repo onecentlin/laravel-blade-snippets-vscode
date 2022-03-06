@@ -426,15 +426,20 @@
     "description": "define a portion of template that will only be evaluated once per rendering cycle"
   },
   /* v8.x */
-  "blade-aware": {
+  "aware": {
     "prefix": "b:aware",
     "body": "@aware(['${1:propName}'])",
     "description": "Accessing data from a parent component (Laravel 8.64)"
   },
-  "blade-js": {
+  "js": {
     "prefix": "b:js",
     "body": "@js(${1:\\$data})",
     "description": "This directive is useful to properly escape JSON within HTML quotes"
+  },
+  "class": {
+    "prefix": "b:class",
+    "body": "@class(['${1:p-4}', ${2:'font-bold' => true}])",
+    "description": "conditionally compiles a CSS class string. (Laravel 8.51)"
   },
   /* v9.x */
   "checked": {
