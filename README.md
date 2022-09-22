@@ -84,6 +84,7 @@ Specific settings for blade language
 | b:csrf              | @csrf (v5.6)                              |
 | b:method            | @method(...) (v5.6)                       |
 | b:dump              | @dump(...) (v5.6)                         |
+| b:dd                | @dd(...) (v5.6)                           |
 | b:error             | @error...@enderror (v5.8)                 |
 | b:props             | @props (v7.4)                             |
 | b:production        | @production...@endproduction              |
