@@ -380,6 +380,11 @@
     "body": "@dump($1)",
     "description": "dump"
   },
+  "dd": {
+    "prefix": "b:dd",
+    "body": "@dd($1)",
+    "description": "dump and die"
+  },
   /* Retrieving Translation Strings */
   "lang": {
     "prefix": "b:lang",
