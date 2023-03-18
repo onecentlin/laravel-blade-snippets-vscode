@@ -1,3 +1,10 @@
+## 1.33.0
+
+- Add `@dd` directive and `b:dd` snippet ([@BrayanCaro](https://github.com/BrayanCaro) - [PR #158](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/158))
+- Add `@style`, `@readonly`, `@required`, `@pushOnce` directive
+- Add `b:style`, `b:readonly`, `b:required`, `b:pushOnce` snippet
+- Update syntax file supports: style, readonly, required, pushOnce directive
+
 ## 1.32.0
 
 - Add `@disabled` directive and `b:disabled` snippet ([@JustinByrne](https://github.com/JustinByrne) - [PR #151](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/151))

@@ -96,6 +96,10 @@ Specific settings for blade language
 | b:checked           | @checked (v9.x)                           |
 | b:selected          | @selected (v9.x)                          |
 | b:disabled          | @disabled (v9.x)                          |
+| b:style             | @style (v9.x)                             |
+| b:readonly          | @readonly (v9.x)                          |
+| b:required          | @required (v9.x)                          |
+| b:pushOnce          | @pushOnce...@endPushOnce (v9.x)           |
 
 ### $loop variable (Laravel v5.3+)
 
