@@ -249,7 +249,7 @@ This comment will not be in the rendered HTML
 {{-- PHP --}}
 <?php echo $name; ?>
 <?= $name; ?>
-<?php echo ($var)->format('m/d/Y H:i'); ?>
+<?php echo($var)->format('m/d/Y H:i'); ?>
 
 <?php
     foreach (range(1, 10) as $number) {
@@ -282,6 +282,19 @@ This comment will not be in the rendered HTML
 
 <span class="p-4 text-gray-500 bg-red"></span>
 
+{{-- Conditional Classes : `@style` directive --}}
+
+@php
+    $isActive = true;
+@endphp
+ 
+<span @style([
+    'background-color: red',
+    'font-weight: bold' => $isActive,
+])></span>
+ 
+<span style="background-color: red; font-weight: bold;"></span>
+
 
 {{-- The @once Directive --}}
 
@@ -292,6 +305,14 @@ This comment will not be in the rendered HTML
         </script>
     @endpush
 @endonce
+
+{{-- The @pushOnce Directive --}}
+
+@pushOnce('scripts')
+    <script>
+        // Your custom JavaScript...
+    </script>
+@endPushOnce
 
 {{-- Forms --}}
 <form method="POST" action="/foo/bar">
@@ -497,6 +518,7 @@ deployment_finish
 
 @livewire('user-profile', ['user' => $user], key($user->id))
 
+{{-- Additional Attributes --}}
 {{-- Checked / Selected / Disabled Blade Directives (9.x) --}}
 
 <input type="checkbox"
@@ -515,3 +537,15 @@ deployment_finish
 <button type="submit" @disabled($errors->isNotEmpty())>
     Submit
 </button>
+
+{{-- Readonly / Required Blade Directives (9.x) --}}
+
+<input type="email"
+        name="email"
+        value="email@laravel.com"
+        @readonly($user->isNotAdmin()) />
+
+<input type="text"
+        name="title"
+        value="title"
+        @required($user->isAdmin()) />

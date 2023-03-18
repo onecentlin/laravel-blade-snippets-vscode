@@ -461,5 +461,29 @@
     "prefix": "b:disabled",
     "body": "@disabled(${1:true})",
     "description": "The @disabled directive may be used to indicate if a given element should be \"disabled\" (Laravel 9.x)"
+  },
+  "style": {
+    "prefix": "b:style",
+    "body": "@style($1)",
+    "description": "The @style directive may be used to conditionally add inline CSS styles to an HTML element (Laravel 9.x)"
+  },
+  "readonly": {
+    "prefix": "b:readonly",
+    "body": "@readonly(${1:true})",
+    "description": "The @readonly directive may be used to indicate if a given element should be \"readonly\" (Laravel 9.x)"
+  },
+  "required": {
+    "prefix": "b:required",
+    "body": "@required(${1:true})",
+    "description": "The @required directive may be used to indicate if a given element should be \"required\" (Laravel 9.x)"
+  },
+  "pushOnce": {
+    "prefix": "b:pushOnce",
+    "body": [
+      "@pushOnce('${1:scripts}')",
+      "    $2",
+      "@endPushOnce"
+    ],
+    "description": "Combine @once and @push for convenience (Laravel 9.x)"
   }
 }
