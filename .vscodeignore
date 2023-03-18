@@ -12,6 +12,8 @@ server/src/**
 server/lib/**
 server/*.json
 server/node_modules/.bin/
+server/node_modules/@types/
+server/node_modules/@emmoetio/
 webpack.config.js
 node_modules/**
 **/*.ts
