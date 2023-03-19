@@ -6,12 +6,15 @@
     "lib": [
       "es6"
     ],
-    "sourceMap": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "sourceMap": false,
     "rootDir": ".",
     "skipLibCheck": true,
 		"allowSyntheticDefaultImports": true
   },
   "exclude": [
-        "server"
+    "server"
   ]
 }
