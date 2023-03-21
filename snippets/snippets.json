@@ -485,5 +485,23 @@
       "@endPushOnce"
     ],
     "description": "Combine @once and @push for convenience (Laravel 9.x)"
+  },
+  "prepend": {
+    "prefix": "b:prepend",
+    "body": [
+      "@prepend('${1:scripts}')",
+      "    $2",
+      "@prepend"
+    ],
+    "description": "prepend content to a stack"
+  },
+  "prependOnce": {
+    "prefix": "b:prependOnce",
+    "body": [
+      "@prependOnce('${1:scripts}')",
+      "    $2",
+      "@endPrependOnce"
+    ],
+    "description": "Combine @once and @prepend for convenience (Laravel 9.x)"
   }
 }

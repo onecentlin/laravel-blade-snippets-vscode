@@ -306,13 +306,19 @@ This comment will not be in the rendered HTML
     @endpush
 @endonce
 
-{{-- The @pushOnce Directive --}}
+{{-- The @pushOnce, @prependOnce Directive --}}
 
 @pushOnce('scripts')
     <script>
         // Your custom JavaScript...
     </script>
 @endPushOnce
+
+@prependOnce('scripts')
+    <script>
+        // Your custom JavaScript...
+    </script>
+@endPrpendOnce
 
 {{-- Forms --}}
 <form method="POST" action="/foo/bar">
@@ -407,11 +413,11 @@ This comment will not be in the rendered HTML
 @each('view.name', $jobs, 'job', 'view.empty')
 
 {{-- Stacks --}}
+@stack('scripts')
+
 @push('scripts')
     <script src="/example.js"></script>
 @endpush
-
-@stack('scripts')
 
 @prepend('scripts')
     This will be first...
