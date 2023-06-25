@@ -114,7 +114,7 @@
   "dependencies": {
     "vscode-css-languageservice": "^6.2.4",
     "vscode-html-languageservice": "^4.2.5",
-    "vscode-languageclient": "^6.1.4",
+    "vscode-languageclient": "^8.1.0",
     "vscode-languageserver-types": "^3.17.3"
   }
 }
