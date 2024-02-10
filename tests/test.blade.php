@@ -306,13 +306,19 @@ This comment will not be in the rendered HTML
     @endpush
 @endonce
 
-{{-- The @pushOnce, @prependOnce Directive --}}
+{{-- The @pushOnce, @pushIf, @prependOnce Directive --}}
 
 @pushOnce('scripts')
     <script>
         // Your custom JavaScript...
     </script>
 @endPushOnce
+
+@pushIf($condition, 'scripts')
+    <script>
+        // Your custom JavaScript...
+    </script>
+@endPushIf
 
 @prependOnce('scripts')
     <script>
