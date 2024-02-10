@@ -1,3 +1,10 @@
+## 1.35.0
+
+- Add `@pushIf` directive and `b:pushIf` snippet ([@AbdelrhmanSaid](https://github.com/AbdelrhmanSaid) - PR #174)
+- Add `<x-slot:name>` highlight ([@solicomo](https://github.com/solicomo) - PR #175)
+- Enhance BladeFormatter.ts ([@1cbyc](https://github.com/1cbyc) - PR #167)
+- Update package dependencies
+
 ## 1.34.0
 
 - Add `b:prepend` snippet

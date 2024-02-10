@@ -2,7 +2,7 @@
   "name": "laravel-blade",
   "displayName": "Laravel Blade Snippets",
   "description": "Laravel blade snippets and syntax highlight support",
-  "version": "1.34.0",
+  "version": "1.35.1",
   "publisher": "onecentlin",
   "author": {
     "name": "Winnie Lin",

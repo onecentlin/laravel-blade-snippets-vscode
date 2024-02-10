@@ -287,12 +287,12 @@ This comment will not be in the rendered HTML
 @php
     $isActive = true;
 @endphp
- 
+
 <span @style([
     'background-color: red',
     'font-weight: bold' => $isActive,
 ])></span>
- 
+
 <span style="background-color: red; font-weight: bold;"></span>
 
 
@@ -351,6 +351,14 @@ This comment will not be in the rendered HTML
 <x-test></x-test>
 <x-alert type="error" :message="$message"/>
 <x-dynamic-component :component="$componentName" class="mt-4" />
+
+<x-alert>
+    <x-slot:title>
+        Server Error
+    </x-slot>
+
+    <strong>Whoops!</strong> Something went wrong!
+</x-alert>
 
 {{-- Component attribute expressions --}}
 <x-test

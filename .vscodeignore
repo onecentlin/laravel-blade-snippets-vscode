@@ -3,6 +3,7 @@
 tests/**/*
 .vscode-test/**
 out/test/**
+out/src/**
 test/**
 src/**
 **/*.map
@@ -13,7 +14,10 @@ server/lib/**
 server/*.json
 server/node_modules/.bin/
 server/node_modules/@types/
-server/node_modules/@emmoetio/
+server/node_modules/**/docs/
+server/node_modules/**/*.md
+server/node_modules/**/*.txt
+server/node_modules/**/*.editorconfig
 webpack.config.js
 node_modules/**
 **/*.ts
