@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import * as html from 'vscode-html-languageservice';
-import * as lst from 'vscode-languageserver-types';
+import * as lst from 'vscode-languageserver-textdocument';
 import { BladeFormatter, IBladeFormatterOptions } from "../services/BladeFormatter";
 
 const service = html.getLanguageService()
