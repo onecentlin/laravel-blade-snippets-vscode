@@ -489,7 +489,7 @@
   "pushIf": {
     "prefix": "b:pushIf",
     "body": [
-      "@pushIf(${$1:$condition}, '${2:scripts}')",
+      "@pushIf(${1:\\$condition}, '${2:scripts}')",
       "    $3",
       "@endPushIf"
     ],
