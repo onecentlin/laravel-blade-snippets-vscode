@@ -324,7 +324,7 @@ This comment will not be in the rendered HTML
     <script>
         // Your custom JavaScript...
     </script>
-@endPrpendOnce
+@endPrependOnce
 
 {{-- Forms --}}
 <form method="POST" action="/foo/bar">
