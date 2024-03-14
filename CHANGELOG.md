@@ -1,3 +1,9 @@
+## 1.36.0
+
+- Add `@session` directive and `b:session` snippet
+- Add `@use` directive
+- Add `@vite` directive
+
 ## 1.35.0
 
 - Add `@pushIf` directive and `b:pushIf` snippet ([@AbdelrhmanSaid](https://github.com/AbdelrhmanSaid) - PR #174)
@@ -14,14 +20,14 @@
 
 ## 1.33.0
 
-- Add `@dd` directive and `b:dd` snippet ([@BrayanCaro](https://github.com/BrayanCaro) - [PR #158](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/158))
+- Add `@dd` directive and `b:dd` snippet ([@BrayanCaro](https://github.com/BrayanCaro) - PR #158)
 - Add `@style`, `@readonly`, `@required`, `@pushOnce` directive
 - Add `b:style`, `b:readonly`, `b:required`, `b:pushOnce` snippet
 - Update syntax supports: style, readonly, required, pushOnce directive
 
 ## 1.32.0
 
-- Add `@disabled` directive and `b:disabled` snippet ([@JustinByrne](https://github.com/JustinByrne) - [PR #151](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/151))
+- Add `@disabled` directive and `b:disabled` snippet ([@JustinByrne](https://github.com/JustinByrne) - PR #151)
 - Add `b:class` snippet (PR #136 and PR #140 - Thanks to [@lakuapik](https://github.com/lakuapik) and [@wilsenhc](https://github.com/wilsenhc))
 
 ## 1.31.0
@@ -43,14 +49,14 @@ Add Laravel 9 features
 
 Happy New Year 2022!
 
-- Add `b:canany` and `b:canany-cananyelse` snippet ([@JustinByrne](https://github.com/JustinByrne) - [PR #144](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/144))
+- Add `b:canany` and `b:canany-cananyelse` snippet ([@JustinByrne](https://github.com/JustinByrne) - PR #144)
 - Fix snippet
 - Update blade syntaxes
 - Update packages
 
 ## 1.28.0
 
-- Added support attribute expressions syntax highlighting ([@cpof-tea](https://github.com/cpof-tea) - [PR #138](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/138))
+- Added support attribute expressions syntax highlighting ([@cpof-tea](https://github.com/cpof-tea) - PR #138)
 
 ## 1.27.0
 
@@ -60,14 +66,14 @@ Happy New Year 2022!
 
 ## 1.26.0
 
-- Add `b:once` snippet ([@lakuapik](https://github.com/lakuapik) - [PR #137](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/137))
-- Add `Blade::stringable` snippet ([@lakuapik](https://github.com/lakuapik) - [PR #135](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/135))
+- Add `b:once` snippet ([@lakuapik](https://github.com/lakuapik) - PR #137)
+- Add `Blade::stringable` snippet ([@lakuapik](https://github.com/lakuapik) - PR #135)
 - Update packages
 
 ## 1.25.0
 
 - Add `@once` directive
-- Fix ([#121](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/121) @php() highlighting
+- Fix #121 @php() highlighting
 - Update blade syntaxes
 
 ## 1.24.0
@@ -90,7 +96,7 @@ Happy New Year 2022!
 
 ## 1.21.0
 
-- Add `b:error` snippets ([@CaddyDz](https://github.com/CaddyDz) - [PR #95](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/95))
+- Add `b:error` snippets ([@CaddyDz](https://github.com/CaddyDz) - PR #95)
 - Add `b:props` snippets
 - Add blade extensions snippets
     - `Blade::component`
@@ -104,12 +110,12 @@ Happy New Year 2022!
 
 ## 1.19.0
 
-- Append html format options to html formatter ([@ayatkyo](https://github.com/ayatkyo) - [PR #87](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/87))
+- Append html format options to html formatter ([@ayatkyo](https://github.com/ayatkyo) - PR #87)
 - Update package dependencies
 
 ## 1.18.0
 
-- Add `b:csrf`, `b:method`, `b:dump` snipptes ([@HasanAlyazidi](https://github.com/HasanAlyazidi) - [PR #60](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/60))
+- Add `b:csrf`, `b:method`, `b:dump` snipptes ([@HasanAlyazidi](https://github.com/HasanAlyazidi) - PR #60)
 - Fix comment with extra spaces (#59)
 - Fix formatting issue in url syntax (#57)
 - Fix shorthand `@php()` for Roots/Sage WordPress Template with html tag syntax highlight (#53)
@@ -144,7 +150,7 @@ Happy New Year 2022!
 ## 1.14.0
 
 - Fix blade syntax broken with VSCode 1.20.0 release (#42)
-- Modify the highlight, add to the style and script autocomplete ([@tiansin](https://github.com/tiansin) - [PR #43](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/43))
+- Modify the highlight, add to the style and script autocomplete ([@tiansin](https://github.com/tiansin) - PR #43)
 - Fix javascript autocompletion not working in script tag (#39)
 - Add `b:unless` snippet
 
@@ -166,13 +172,13 @@ Happy New Year 2022!
 
 ## 1.11.0
 
-- Fix indent issue #9, #35 ([@izcream](https://github.com/izcream) - [PR #38](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/38))
-- Fix minor whitespace inconsistencies ([@raniesantos](https://github.com/raniesantos) - [PR #28](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/28/files))
+- Fix indent issue #9, #35 ([@izcream](https://github.com/izcream) - PR #38)
+- Fix minor whitespace inconsistencies ([@raniesantos](https://github.com/raniesantos) - PR #28)
 
 ## 1.10.0
 
 - Update syntax highlighting
-- Added `Document Highlight Provider` and `Document Format Provider` ([@TheColorRed](https://github.com/TheColorRed) - [PR #17](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/17))
+- Added `Document Highlight Provider` and `Document Format Provider` ([@TheColorRed](https://github.com/TheColorRed) - PR #17)
 
 ## 1.9.0
 
@@ -188,20 +194,20 @@ Laravel 5.5 blade directives & snippets:
 
 Syntax Enhancement
 
-- Change grammar of blade directive ([@mikebronner](https://github.com/mikebronner) - [PR #23](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/23))
+- Change grammar of blade directive ([@mikebronner](https://github.com/mikebronner) - PR #23)
 
 ## 1.8.2
 
-- Update README ([#18](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/18), [#19](https://github.com/onecentlin/laravel-blade-snippets-vscode/pull/19))
+- Update README (#18, #19)
 
 ## 1.8.1
 
-- Fix syntax parse failed [#5](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/5)
+- Fix syntax parse failed (#5)
 
 ## 1.8.0
 
-- Add `@can` and `@cannot` related directives ([#4](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/4))
-- Add `b:can`, `b:can-elsecan`, `b:cannot`, `b:cannot-elsecannot` authorizing snippets ([#4](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/4))
+- Add `@can` and `@cannot` related directives (#4)
+- Add `b:can`, `b:can-elsecan`, `b:cannot`, `b:cannot-elsecannot` authorizing snippets (#4)
 - Add `lv:mix` helper
 - Fix for loop snippet
 
@@ -217,7 +223,7 @@ Syntax Enhancement
 ## 1.6
 
 - Support `@component` and `@slot` directive added in Laravel 5.4
-- Fix [#3](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues/3) issue
+- Fix #3 issue
 
 ## 1.5
 
