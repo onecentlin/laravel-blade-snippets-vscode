@@ -129,6 +129,11 @@ Hello, @{{ name }}.
     </div>
 @endif
 
+@session('status')
+    <div class="p-4 bg-green-100">
+        {{ $value }}
+    </div>
+@endsession
 
 {{-- Switch Statements --}}
 
@@ -265,6 +270,8 @@ This comment will not be in the rendered HTML
     }
 @endphp
 
+@use('App\Models\Flight')
+@use('App\Models\Flight', 'FlightModel')
 
 {{-- Conditional Classes : `@class` directive --}}
 
@@ -569,3 +576,16 @@ deployment_finish
         name="title"
         value="title"
         @required($user->isAdmin()) />
+
+{{-- Vite --}}
+
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+@vite('resources/js/app.js')
+@vite('resources/js/app.js', 'vendor/courier/build')
+
+<style>
+    {!! Vite::content('resources/css/app.css') !!}
+</style>
+<script>
+    {!! Vite::content('resources/js/app.js') !!}
+</script>
