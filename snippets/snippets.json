@@ -512,5 +512,14 @@
       "@endPrependOnce"
     ],
     "description": "Combine @once and @prepend for convenience (Laravel 9.x)"
+  },
+  "session": {
+    "prefix": "b:session",
+    "body": [
+      "@session('${1:status}')",
+      "    $2",
+      "@session"
+    ],
+    "description": "The @session directive may be used to determine if a session value exists (Laravel 10.x)"
   }
 }
