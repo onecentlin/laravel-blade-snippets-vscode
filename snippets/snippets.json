@@ -500,7 +500,7 @@
     "body": [
       "@prepend('${1:scripts}')",
       "    $2",
-      "@prepend"
+      "@endprepend"
     ],
     "description": "prepend content to a stack"
   },
@@ -518,7 +518,7 @@
     "body": [
       "@session('${1:status}')",
       "    $2",
-      "@session"
+      "@endsession"
     ],
     "description": "The @session directive may be used to determine if a session value exists (Laravel 10.x)"
   }
