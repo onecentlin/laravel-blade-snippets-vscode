@@ -1,3 +1,7 @@
+## 1.36.1
+
+- Fix `b:session` and `b:prepend` snippets ([@prshendra](https://github.com/prshendra) - PR #180)
+
 ## 1.36.0
 
 - Add `@session` directive and `b:session` snippet
