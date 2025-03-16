@@ -21,6 +21,7 @@ const config = {
     extensions: ['.ts', '.js']
   },
   module: {
+    noParse: /node_modules\/vscode-languageserver-types\/lib\/umd\/main.js/,
     rules: [
       {
         test: /\.ts$/,
