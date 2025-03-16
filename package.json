@@ -2,7 +2,7 @@
   "name": "laravel-blade",
   "displayName": "Laravel Blade Snippets",
   "description": "Laravel blade snippets and syntax highlight support",
-  "version": "1.36.1",
+  "version": "1.37.0",
   "publisher": "onecentlin",
   "author": {
     "name": "Winnie Lin",
@@ -18,7 +18,7 @@
     "url": "https://github.com/onecentlin/laravel-blade-snippets-vscode/issues"
   },
   "engines": {
-    "vscode": "^1.46.0"
+    "vscode": "^1.75.0"
   },
   "keywords": [
     "laravel",
@@ -100,21 +100,18 @@
       }
     }
   },
-  "activationEvents": [
-    "onLanguage:blade"
-  ],
   "devDependencies": {
     "@types/node": "^16.18.16",
-    "@types/vscode": "^1.46.0",
-    "ts-loader": "^9.4.2",
-    "typescript": "^5.0.2",
-    "webpack": "^5.76.2",
+    "@types/vscode": "^1.75.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
+    "webpack": "^5.98.0",
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "vscode-css-languageservice": "^6.2.4",
+    "vscode-css-languageservice": "^6.3.2",
     "vscode-html-languageservice": "^4.2.5",
     "vscode-languageclient": "^6.1.4",
-    "vscode-languageserver-types": "^3.17.3"
+    "vscode-languageserver-types": "^3.17.5"
   }
 }
