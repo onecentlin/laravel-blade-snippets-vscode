@@ -513,6 +513,7 @@
     ],
     "description": "Combine @once and @prepend for convenience (Laravel 9.x)"
   },
+  /* v10.x */
   "session": {
     "prefix": "b:session",
     "body": [
@@ -521,5 +522,15 @@
       "@endsession"
     ],
     "description": "The @session directive may be used to determine if a session value exists (Laravel 10.x)"
+  },
+  "use": {
+    "prefix": "b:use",
+    "body": "@use('${1:App\\Models\\Flight}')",
+    "description": "The @use directive may be used to import a class (Laravel 10.x)"
+  },
+  "use-alias": {
+    "prefix": "b:use-alias",
+    "body": "@use('${1:App\\Models\\Flight}', '${2:FlightModel}')",
+    "description": "The @use directive may be used to import a class as specified alias name (Laravel 10.x)"
   }
 }
