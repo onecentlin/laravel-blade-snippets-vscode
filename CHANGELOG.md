@@ -1,3 +1,8 @@
+## 1.37.0
+
+- Add `b:use` and `b:use-alias` snippets
+- Update package dependencies
+
 ## 1.36.1
 
 - Fix `b:session` and `b:prepend` snippets ([@prshendra](https://github.com/prshendra) - PR #180)

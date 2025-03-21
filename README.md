@@ -104,6 +104,8 @@ Specific settings for blade language
 | b:pushIf            | @pushIf...@endPushIf (v9.x)               |
 | b:prependOnce       | @prependOnce...@endPrependOnce (v9.x)     |
 | b:session           | @session ... @endsession (v10.x)          |
+| b:use               | @use (v10.x)                              |
+| b:use-alias         | @use (v10.x)                              |
 
 ### $loop variable (Laravel v5.3+)
 
