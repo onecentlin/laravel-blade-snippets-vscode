@@ -135,6 +135,12 @@ Hello, @{{ name }}.
     </div>
 @endsession
 
+{{-- Context Directives --}}
+
+@context('canonical')
+    <link href="{{ $value }}" rel="canonical">
+@endcontext
+
 {{-- Switch Statements --}}
 
 @switch($i)
@@ -428,6 +434,7 @@ This comment will not be in the rendered HTML
 @includeWhen($boolean, 'view.name', ['some' => 'data'])
 @includeUnless($boolean, 'view.name', ['some' => 'data'])
 @includeFirst(['custom.admin', 'admin'], ['some' => 'data'])
+@includeIsolated('view.name', ['some' => 'data'])
 
 {{-- Rendering Views For Collections --}}
 @each('view.name', $jobs, 'job')
