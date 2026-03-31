@@ -106,6 +106,8 @@ Specific settings for blade language
 | b:session           | @session ... @endsession (v10.x)          |
 | b:use               | @use (v10.x)                              |
 | b:use-alias         | @use (v10.x)                              |
+| b:context           | @context ... @endcontext (v12.x)          |
+| b:includeIsolated   | @includeIsolated (v12.x)                  |
 
 ### $loop variable (Laravel v5.3+)
 

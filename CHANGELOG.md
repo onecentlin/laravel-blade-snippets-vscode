@@ -1,3 +1,9 @@
+## 1.38.0
+
+- Add `b:context` and `b:includeIsolated` snippets
+- Update syntax: `@context` and `@includeIsolated` directive
+- Update package dependencies
+
 ## 1.37.0
 
 - Add `b:use` and `b:use-alias` snippets
